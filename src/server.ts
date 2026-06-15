@@ -1,9 +1,4 @@
-import {
-  AngularNodeAppEngine,
-  createNodeRequestHandler,
-  isMainModule,
-  writeResponseToNodeResponse,
-} from '@angular/ssr/node';
+import { AngularNodeAppEngine, createNodeRequestHandler, isMainModule, writeResponseToNodeResponse, } from '@angular/ssr/node';
 import express from 'express';
 import { join } from 'node:path';
 
@@ -29,8 +24,8 @@ const angularApp = new AngularNodeAppEngine();
  */
 app.use(
   express.static(browserDistFolder, {
-    maxAge: '1y',
-    index: false,
+    maxAge:   '1y',
+    index:    false,
     redirect: false,
   }),
 );

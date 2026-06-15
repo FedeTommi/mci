@@ -1,0 +1,54 @@
+:host {
+  .width-container {
+    display: grid;
+    grid-template-columns:
+    [full-start] minmax(24px, 1fr)
+    [content-start] minmax(0, 1280px)
+    [content-end] minmax(24px, 1fr)
+    [full-end];
+  }
+
+  .height-container {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+
+  .content {
+    grid-column: content;
+  }
+
+  .full-bleed {
+    grid-column: full;
+  }
+
+  header {
+    padding-top: 2rem;
+
+    &.floating {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .main-content {
+  }
+
+  footer {
+    height: 400px;
+    background-color: var(--black);
+    color: white;
+    padding-top: var(--xl)
+  }
+}

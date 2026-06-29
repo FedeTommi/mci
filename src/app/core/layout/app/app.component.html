@@ -1,6 +1,17 @@
 <header class="width-container floating">
   <div class="content menu">
-    <div class="logo">logo</div>
+    <div class="logo">
+      <a routerLink="/">
+        <img
+          alt="MCI logo"
+          height="60"
+          width="60"
+          ngSrc="/images/logo.svg"
+          priority="1"
+        >
+      </a>
+
+    </div>
     <button mat-button>Home</button>
     <button mat-button>Storia</button>
     <button mat-button>Parroci</button>
@@ -10,10 +21,22 @@
     <button mat-button>Calendario messe</button>
     <button mat-button>Notizie</button>
     <button mat-button>Carlo Acutis</button>
-    <button mat-icon-button>Fb</button>
-    <button mat-icon-button>Ig</button>
+    <a mat-icon-button href="https://www.facebook.com/profile.php?id=61583487631617">
+      <mat-icon svgIcon="facebook"></mat-icon>
+    </a>
+    <a mat-icon-button routerLink="/">
+      <mat-icon svgIcon="instagram"></mat-icon>
+    </a>
   </div>
 </header>
+
+<div class="hero">
+  <img
+    alt="Augsburg"
+    class="hero-image"
+    src="https://www.augsburg.de/fileadmin/_processed_/d/8/csm_250717_Website_2025_Titelbild_v01_1661366e19.jpg"
+  >
+</div>
 
 <div class="width-container height-container">
   <div class="content main-content">

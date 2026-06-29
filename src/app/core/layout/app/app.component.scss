@@ -40,6 +40,29 @@
 
   .logo {
     margin-right: auto;
+
+    a {
+      cursor: pointer;
+    }
+  }
+
+  a img {
+    color: var(--mat-sys-primary);
+  }
+
+  .hero {
+    width: 100vw;
+    height: 840px;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
   }
 
   .main-content {

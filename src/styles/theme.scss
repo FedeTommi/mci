@@ -3,16 +3,81 @@
 
 html {
   color-scheme: light;
-  font-family: 'Epilogue Local', 'Helvetica Neue', sans-serif;
+  font-family: 'Epilogue', 'Helvetica Neue', sans-serif;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 80px;
+    line-height: 1.1em;
+    letter-spacing: -2px;
+    word-spacing: 0;
+    margin: 0;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.15em;
+    letter-spacing: -2px;
+    word-spacing: 0;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    word-spacing: 0;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.3em;
+    letter-spacing: -1px;
+    word-spacing: 0;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.4em;
+    letter-spacing: 0;
+    word-spacing: 0;
+  }
+
+  h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.6em;
+    letter-spacing: 2px;
+    word-spacing: 0;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 1.6em;
+  }
+
+  .size-default {
+    font-size: 22px;
+    line-height: 1.4em;
+    letter-spacing: 0;
+    word-spacing: 0;
+  }
 
   @include mat.theme((
     color: (
-      primary: mci.$primary-palette,
+      primary: mci.$secondary-palette,
       tertiary: mci.$tertiary-palette,
       theme-type: light,
     ),
-    typography: 'Epilogue Local',
     density: 0,
+    typography: 'Epilogue',
   ));
 
   @include mat.button-overrides((

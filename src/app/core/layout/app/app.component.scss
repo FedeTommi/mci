@@ -51,18 +51,26 @@
   }
 
   .hero {
-    width: 100vw;
+    // width: 100vw;
     height: 840px;
     max-height: 100vh;
-    overflow: hidden;
-  }
+    overflow: hidden; // currently for header, TODO make phone header
+    padding: 100px 0;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 30%,
+        rgb(0 0 0 / 0.7) 100%,
+    ),
+    url("https://www.augsburg.de/fileadmin/_processed_/d/8/csm_250717_Website_2025_Titelbild_v01_1661366e19.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+    .hero-title {
+      margin-top: auto;
+      color: white;
+    }
   }
 
   .main-content {

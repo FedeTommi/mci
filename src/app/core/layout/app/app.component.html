@@ -1,76 +1,10 @@
-<header class="width-container floating">
-  <div class="content menu">
-    <div class="logo">
-      <a routerLink="/">
-        <img
-          alt="MCI logo"
-          height="60"
-          width="60"
-          ngSrc="/images/logo.svg"
-          priority="1"
-        >
-      </a>
-
-    </div>
-    <button mat-button>Home</button>
-    <button mat-button>Storia</button>
-    <button mat-button>Parroci</button>
-    <button mat-button>Pfarramt</button>
-    <button mat-button>Galleria</button>
-    <button mat-button>Contatti</button>
-    <button mat-button>Calendario messe</button>
-    <button mat-button>Notizie</button>
-    <button mat-button>Carlo Acutis</button>
-    <a mat-icon-button href="https://www.facebook.com/profile.php?id=61583487631617">
-      <mat-icon svgIcon="facebook"></mat-icon>
-    </a>
-    <a mat-icon-button routerLink="/">
-      <mat-icon svgIcon="instagram"></mat-icon>
-    </a>
-  </div>
-</header>
-
-<div class="hero width-container">
-  <div class="content hero-title">
-    <h1>
-      <div>Missione Cattolica</div>
-      <div>Italiana</div>
-    </h1>
-    <h2>Augsburg</h2>
-  </div>
-</div>
+<mci-header />
+<mci-hero />
 
 <div class="width-container height-container">
   <div class="content main-content">
     <router-outlet />
   </div>
 
-  <footer class="full-bleed width-container">
-    <div class="content">
-      <a routerLink="/">
-        <img
-          alt="MCI logo"
-          height="100"
-          width="100"
-          ngSrc="/images/logo.svg"
-          priority="1"
-        >
-      </a>
-      <div style="grid-area: contacts" class="contacts">
-        <h5>Contatti</h5>
-      </div>
-      <div style="grid-area: location">
-        <h5>Posizione</h5>
-      </div>
-      <div style="grid-area: connected">
-        <h3>Resta connesso</h3>
-      </div>
-      <div style="grid-area: buttons">
-        <button mat-button>Home</button>
-        <button mat-button>Pfarramt</button>
-        <button mat-button>Contatti</button>
-        <button mat-button>Notizie</button>
-      </div>
-    </div>
-  </footer>
+  <mci-footer />
 </div>

@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use '../../../../styles/_theme-colors' as mci;
+
+:host {
+  header {
+    padding-top: 2rem;
+
+    &.floating {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .logo {
+    margin-right: auto;
+
+    a {
+      cursor: pointer;
+    }
+  }
+
+  a mat-icon {
+    color: var(--mat-sys-primary);
+  }
+}

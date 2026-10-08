@@ -1,0 +1,29 @@
+@use 'sass:map';
+@use '../../../../styles/_theme-colors' as mci;
+
+:host {
+  display: contents;
+  
+  footer {
+    height: 400px;
+    background-color: var(--mat-sys-surface-container-highest);
+    color: white;
+    padding-top: var(--xl);
+
+    div.content {
+      display: grid;
+      grid-template-areas: 'logo . connected'
+    'contacts location connected'
+    'buttons . .';
+    }
+
+    img, .contacts {
+      padding-left: var(--mat-button-text-horizontal-padding, 12px);
+    }
+
+    h3, h5 {
+      color: map.get(mci.$primary-palette, 20);
+      // color: var(--mat-sys-on-background);
+    }
+  }
+}

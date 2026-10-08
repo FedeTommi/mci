@@ -13,4 +13,27 @@ html, body {
 body {
   background: var(--mat-sys-surface);
   color: var(--mat-sys-on-surface);
+
+  .width-container {
+    display: grid;
+    grid-template-columns:
+    [full-start] minmax(24px, 1fr)
+    [content-start] minmax(0, 1280px)
+    [content-end] minmax(24px, 1fr)
+    [full-end];
+  }
+
+  .height-container {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+
+  .content {
+    grid-column: content;
+  }
+
+  .full-bleed {
+    grid-column: full;
+  }
 }

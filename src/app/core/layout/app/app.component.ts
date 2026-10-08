@@ -1,17 +1,15 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { MatButton, MatIconButton } from '@angular/material/button';
-import { NgOptimizedImage } from '@angular/common';
-import { MatIcon } from '@angular/material/icon';
+import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from '../header/header.component';
+import { HeroComponent } from '../../../features/hero/hero.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
-  imports:         [
+  imports: [
     RouterOutlet,
-    MatButton,
-    MatIconButton,
-    NgOptimizedImage,
-    RouterLink,
-    MatIcon,
+    HeaderComponent,
+    HeroComponent,
+    FooterComponent,
   ],
   selector:        'mci-app',
   templateUrl:     'app.component.html',

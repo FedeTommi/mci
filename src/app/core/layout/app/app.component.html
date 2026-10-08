@@ -46,6 +46,31 @@
   </div>
 
   <footer class="full-bleed width-container">
-    <div class="content">some footer</div>
+    <div class="content">
+      <a routerLink="/">
+        <img
+          alt="MCI logo"
+          height="100"
+          width="100"
+          ngSrc="/images/logo.svg"
+          priority="1"
+        >
+      </a>
+      <div style="grid-area: contacts">
+        <h5>Contatti</h5>
+      </div>
+      <div style="grid-area: location">
+        <h5>Posizione</h5>
+      </div>
+      <div style="grid-area: connected">
+        <h3>Resta connesso</h3>
+      </div>
+      <div style="grid-area: buttons">
+        <button mat-button>Home</button>
+        <button mat-button>Pfarramt</button>
+        <button mat-button>Contatti</button>
+        <button mat-button>Notizie</button>
+      </div>
+    </div>
   </footer>
 </div>

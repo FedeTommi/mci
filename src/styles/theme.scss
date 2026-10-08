@@ -72,7 +72,7 @@ html {
 
   @include mat.theme((
     color: (
-      primary: mci.$secondary-palette,
+      primary: mci.$primary-palette,
       tertiary: mci.$tertiary-palette,
       theme-type: light,
     ),

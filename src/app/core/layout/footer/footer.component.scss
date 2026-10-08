@@ -3,11 +3,11 @@
 
 :host {
   display: contents;
-  
+
   footer {
     height: 400px;
     background-color: var(--mat-sys-surface-container-highest);
-    color: white;
+    color: var(--mat-sys-primary);
     padding-top: var(--xl);
 
     div.content {

@@ -1,0 +1,15 @@
+<section
+  class="full-bleed width-container"
+  [style.--section-background-color]="backgroundColor()"
+  [style.--section-color]="textColor()"
+>
+  <div class="content section-content">
+    <h2>{{ title() }}</h2>
+    @if (subtitle()) {
+      <div class="subtitle-container">
+        <span class="italic italic-size-small">{{ subtitle() }}</span>
+      </div>
+    }
+    <ng-content />
+  </div>
+</section>

@@ -1,0 +1,18 @@
+@use 'sass:map';
+@use '../../../../styles/_theme-colors' as mci;
+
+:host {
+  background-color: map.get(mci.$secondary-palette, 20);
+
+  section {
+
+    .title {
+      color: white;
+    }
+
+    .prayer-container {
+      max-width: 500px;
+      color: white;
+    }
+  }
+}

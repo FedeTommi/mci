@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '../../../../styles/_theme-colors' as mci;
+
+:host {
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    // padding-bottom: 60px;
+
+    .value-container {
+      h2, h4 {
+        color: map.get(mci.$secondary-palette, 30);
+      }
+
+      .message {
+        color: map.get(mci.$secondary-palette, 50);
+      }
+    }
+
+  }
+}

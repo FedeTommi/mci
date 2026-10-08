@@ -33,7 +33,8 @@
             "styles": [
               "src/styles/app.scss",
               "src/styles/theme.scss",
-              "src/styles/variables.scss"
+              "src/styles/variables.scss",
+              "src/styles/fonts/font.scss"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",

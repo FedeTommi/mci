@@ -92,6 +92,10 @@
     'buttons . .';
     }
 
+    img, .contacts {
+      padding-left: var(--mat-button-text-horizontal-padding, 12px);
+    }
+
     h3, h5 {
       color: map.get(mci.$primary-palette, 20);
       // color: var(--mat-sys-on-background);

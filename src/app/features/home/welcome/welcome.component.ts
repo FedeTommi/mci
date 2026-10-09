@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MatButton } from '@angular/material/button';
+import { CardComponent } from '../../../shared/card/card.component';
 
 @Component({
   imports:         [
-    MatButton
+    CardComponent
   ],
   selector:        'mci-welcome',
   templateUrl:     'welcome.component.html',

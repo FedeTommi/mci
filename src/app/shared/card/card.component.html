@@ -1,0 +1,13 @@
+<div
+  class="card"
+  [style]="`background-image: url(${imgUrl()})`"
+>
+  <div class="card-content">
+    <h4 class="card-title">{{ title() }}</h4>
+    <p class="card-text">{{ text() }}</p>
+    @if (buttonText()) {
+      <button matButton="elevated">{{ buttonText() }}</button>
+    }
+  </div>
+</div>
+

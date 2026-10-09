@@ -31,6 +31,7 @@
     "@angular/compiler-cli": "22.0.1",
     "@types/express": "5.0.6",
     "@types/node": "20.19.43",
+    "angular-cli-ghpages": "3.1.1",
     "jsdom": "28.1.0",
     "typescript": "6.0.3",
     "vitest": "4.1.8"

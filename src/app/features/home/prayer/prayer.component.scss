@@ -3,6 +3,7 @@
 
 :host {
   background-color: map.get(mci.$secondary-palette, 20);
+  display: block;
 
   section {
     .title {
@@ -14,7 +15,8 @@
       flex-direction: row;
       gap: 40px;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      padding-bottom: 60px;
 
       img {
         width: 100%;

@@ -2,8 +2,10 @@
 @use '../../../../styles/_theme-colors' as mci;
 
 :host {
+  display: contents;
+  
   section {
-    margin-top: 130px;
+    margin-top: 80px;
 
     .section-content {
       max-width: 825px;

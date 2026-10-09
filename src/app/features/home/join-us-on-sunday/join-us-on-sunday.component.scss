@@ -2,8 +2,7 @@
 @use '../../../../styles/_theme-colors' as mci;
 
 :host {
-  display: block;
-  overflow: hidden; // needed for italic overflowing on narrower screens
+  display: contents;
 
   .italic {
     color: var(--mat-sys-on-primary-fixed);
@@ -55,6 +54,7 @@
     .italic {
       text-align: right;
       margin-right: -20px;
+      margin-bottom: -40px;
     }
   }
 

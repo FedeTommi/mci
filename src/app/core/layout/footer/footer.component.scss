@@ -18,6 +18,10 @@
     'buttons . .';
     }
 
+    a mat-icon {
+      color: map.get(mci.$primary-palette, 20);
+    }
+
     img, .contacts {
       padding-left: var(--mat-button-text-horizontal-padding, 12px);
     }

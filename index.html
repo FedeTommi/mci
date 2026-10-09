@@ -1,0 +1,842 @@
+<!DOCTYPE html><html lang="en" data-beasties-container><head>
+  <meta charset="utf-8">
+  <title>Missione Cattolica Italiana</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>*{outline:none;box-sizing:border-box}html,body{height:100%;width:100%;margin:0;padding:0}body{background:var(--mat-sys-surface);color:var(--mat-sys-on-surface)}body .width-container{display:grid;grid-template-columns:[full-start] minmax(24px,1fr) [content-start] minmax(0,1280px) [content-end] minmax(24px,1fr) [full-end]}body .height-container{min-height:100dvh}body .content{grid-column:content}body .full-bleed{grid-column:full}html{color-scheme:light;font-family:Epilogue,Helvetica Neue,sans-serif}html h1,html h2,html h3,html h4,html h5{margin:0}html h1{font-size:80px;line-height:1.1em;letter-spacing:-2px;word-spacing:0;margin:0}html h2{font-weight:700;font-size:50px;line-height:1.15em;letter-spacing:-2px;word-spacing:0}html h3{font-weight:700;font-size:38px;line-height:1.2em;letter-spacing:-1px;word-spacing:0}html h4{font-weight:600;font-size:30px;line-height:1.3em;letter-spacing:-1px;word-spacing:0}html h5{font-weight:600;font-size:22px;line-height:1.4em;letter-spacing:0;word-spacing:0}html p{font-size:19px;line-height:1.6em}html .size-default{font-size:22px;line-height:1.4em;letter-spacing:0;word-spacing:0}html .italic{font-family:Hurricane,sans-serif;font-weight:400;line-height:.6;letter-spacing:0;word-spacing:0;color:#d1c5b4}html .italic-size-big{font-size:120px;display:block;margin-block:40px}html .italic-size-small{font-size:60px}html section{padding-block:60px}@media(max-width:700px){html h2{font-size:40px}html .italic-size-big{font-size:100px}html .italic-size-small{font-size:40px}html section{padding-block:40px}}html{--mat-sys-background: #fff8f2;--mat-sys-error: #96472f;--mat-sys-error-container: #ffdbd0;--mat-sys-inverse-on-surface: #fcefdd;--mat-sys-inverse-primary: #bdcbaa;--mat-sys-inverse-surface: #362f23;--mat-sys-on-background: #211b10;--mat-sys-on-error: #ffffff;--mat-sys-on-error-container: #78311a;--mat-sys-on-primary: #ffffff;--mat-sys-on-primary-container: #3f4b31;--mat-sys-on-primary-fixed: #141f09;--mat-sys-on-primary-fixed-variant: #3f4b31;--mat-sys-on-secondary: #ffffff;--mat-sys-on-secondary-container: #733425;--mat-sys-on-secondary-fixed: #3a0a02;--mat-sys-on-secondary-fixed-variant: #733425;--mat-sys-on-surface: #211b10;--mat-sys-on-surface-variant: #53452d;--mat-sys-on-tertiary: #ffffff;--mat-sys-on-tertiary-container: #264d49;--mat-sys-on-tertiary-fixed: #00201d;--mat-sys-on-tertiary-fixed-variant: #264d49;--mat-sys-outline: #86755a;--mat-sys-outline-variant: #d8c4a5;--mat-sys-primary: #566248;--mat-sys-primary-container: #d9e8c5;--mat-sys-primary-fixed: #d9e8c5;--mat-sys-primary-fixed-dim: #bdcbaa;--mat-sys-scrim: #000000;--mat-sys-secondary: #904b3b;--mat-sys-secondary-container: #ffdad2;--mat-sys-secondary-fixed: #ffdad2;--mat-sys-secondary-fixed-dim: #ffb4a3;--mat-sys-shadow: #000000;--mat-sys-surface: #fff8f2;--mat-sys-surface-bright: #fff8f2;--mat-sys-surface-container: #f9ecda;--mat-sys-surface-container-high: #f3e6d4;--mat-sys-surface-container-highest: #eee1cf;--mat-sys-surface-container-low: #fff2e0;--mat-sys-surface-container-lowest: #ffffff;--mat-sys-surface-dim: #e5d8c7;--mat-sys-surface-tint: #566248;--mat-sys-surface-variant: #f6dfbf;--mat-sys-tertiary: #3e6560;--mat-sys-tertiary-container: #c1ebe4;--mat-sys-tertiary-fixed: #c1ebe4;--mat-sys-tertiary-fixed-dim: #a5cfc8;--mat-sys-neutral-variant20: #3b2e19;--mat-sys-neutral10: #211b10;--mat-sys-level0: 0px 0px 0px 0px rgba(0, 0, 0, .2), 0px 0px 0px 0px rgba(0, 0, 0, .14), 0px 0px 0px 0px rgba(0, 0, 0, .12);--mat-sys-level1: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);--mat-sys-level2: 0px 3px 3px -2px rgba(0, 0, 0, .2), 0px 3px 4px 0px rgba(0, 0, 0, .14), 0px 1px 8px 0px rgba(0, 0, 0, .12);--mat-sys-level3: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);--mat-sys-level4: 0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12);--mat-sys-level5: 0px 7px 8px -4px rgba(0, 0, 0, .2), 0px 12px 17px 2px rgba(0, 0, 0, .14), 0px 5px 22px 4px rgba(0, 0, 0, .12);--mat-sys-body-large: 400 1rem / 1.5rem Epilogue;--mat-sys-body-large-font: Epilogue;--mat-sys-body-large-line-height: 1.5rem;--mat-sys-body-large-size: 1rem;--mat-sys-body-large-tracking: .031rem;--mat-sys-body-large-weight: 400;--mat-sys-body-medium: 400 .875rem / 1.25rem Epilogue;--mat-sys-body-medium-font: Epilogue;--mat-sys-body-medium-line-height: 1.25rem;--mat-sys-body-medium-size: .875rem;--mat-sys-body-medium-tracking: .016rem;--mat-sys-body-medium-weight: 400;--mat-sys-body-small: 400 .75rem / 1rem Epilogue;--mat-sys-body-small-font: Epilogue;--mat-sys-body-small-line-height: 1rem;--mat-sys-body-small-size: .75rem;--mat-sys-body-small-tracking: .025rem;--mat-sys-body-small-weight: 400;--mat-sys-display-large: 400 3.562rem / 4rem Epilogue;--mat-sys-display-large-font: Epilogue;--mat-sys-display-large-line-height: 4rem;--mat-sys-display-large-size: 3.562rem;--mat-sys-display-large-tracking: -.016rem;--mat-sys-display-large-weight: 400;--mat-sys-display-medium: 400 2.812rem / 3.25rem Epilogue;--mat-sys-display-medium-font: Epilogue;--mat-sys-display-medium-line-height: 3.25rem;--mat-sys-display-medium-size: 2.812rem;--mat-sys-display-medium-tracking: 0;--mat-sys-display-medium-weight: 400;--mat-sys-display-small: 400 2.25rem / 2.75rem Epilogue;--mat-sys-display-small-font: Epilogue;--mat-sys-display-small-line-height: 2.75rem;--mat-sys-display-small-size: 2.25rem;--mat-sys-display-small-tracking: 0;--mat-sys-display-small-weight: 400;--mat-sys-headline-large: 400 2rem / 2.5rem Epilogue;--mat-sys-headline-large-font: Epilogue;--mat-sys-headline-large-line-height: 2.5rem;--mat-sys-headline-large-size: 2rem;--mat-sys-headline-large-tracking: 0;--mat-sys-headline-large-weight: 400;--mat-sys-headline-medium: 400 1.75rem / 2.25rem Epilogue;--mat-sys-headline-medium-font: Epilogue;--mat-sys-headline-medium-line-height: 2.25rem;--mat-sys-headline-medium-size: 1.75rem;--mat-sys-headline-medium-tracking: 0;--mat-sys-headline-medium-weight: 400;--mat-sys-headline-small: 400 1.5rem / 2rem Epilogue;--mat-sys-headline-small-font: Epilogue;--mat-sys-headline-small-line-height: 2rem;--mat-sys-headline-small-size: 1.5rem;--mat-sys-headline-small-tracking: 0;--mat-sys-headline-small-weight: 400;--mat-sys-label-large: 500 .875rem / 1.25rem Epilogue;--mat-sys-label-large-font: Epilogue;--mat-sys-label-large-line-height: 1.25rem;--mat-sys-label-large-size: .875rem;--mat-sys-label-large-tracking: .006rem;--mat-sys-label-large-weight: 500;--mat-sys-label-large-weight-prominent: 700;--mat-sys-label-medium: 500 .75rem / 1rem Epilogue;--mat-sys-label-medium-font: Epilogue;--mat-sys-label-medium-line-height: 1rem;--mat-sys-label-medium-size: .75rem;--mat-sys-label-medium-tracking: .031rem;--mat-sys-label-medium-weight: 500;--mat-sys-label-medium-weight-prominent: 700;--mat-sys-label-small: 500 .688rem / 1rem Epilogue;--mat-sys-label-small-font: Epilogue;--mat-sys-label-small-line-height: 1rem;--mat-sys-label-small-size: .688rem;--mat-sys-label-small-tracking: .031rem;--mat-sys-label-small-weight: 500;--mat-sys-title-large: 400 1.375rem / 1.75rem Epilogue;--mat-sys-title-large-font: Epilogue;--mat-sys-title-large-line-height: 1.75rem;--mat-sys-title-large-size: 1.375rem;--mat-sys-title-large-tracking: 0;--mat-sys-title-large-weight: 400;--mat-sys-title-medium: 500 1rem / 1.5rem Epilogue;--mat-sys-title-medium-font: Epilogue;--mat-sys-title-medium-line-height: 1.5rem;--mat-sys-title-medium-size: 1rem;--mat-sys-title-medium-tracking: .009rem;--mat-sys-title-medium-weight: 500;--mat-sys-title-small: 500 .875rem / 1.25rem Epilogue;--mat-sys-title-small-font: Epilogue;--mat-sys-title-small-line-height: 1.25rem;--mat-sys-title-small-size: .875rem;--mat-sys-title-small-tracking: .006rem;--mat-sys-title-small-weight: 500;--mat-sys-corner-extra-large: 28px;--mat-sys-corner-extra-large-top: 28px 28px 0 0;--mat-sys-corner-extra-small: 4px;--mat-sys-corner-extra-small-top: 4px 4px 0 0;--mat-sys-corner-full: 9999px;--mat-sys-corner-large: 16px;--mat-sys-corner-large-end: 0 16px 16px 0;--mat-sys-corner-large-start: 16px 0 0 16px;--mat-sys-corner-large-top: 16px 16px 0 0;--mat-sys-corner-medium: 12px;--mat-sys-corner-none: 0;--mat-sys-corner-small: 8px;--mat-sys-dragged-state-layer-opacity: .16;--mat-sys-focus-state-layer-opacity: .12;--mat-sys-hover-state-layer-opacity: .08;--mat-sys-pressed-state-layer-opacity: .12;--mat-button-text-label-text-weight: 600;--mat-button-filled-label-text-size: 19px;--mat-button-outlined-label-text-size: 19px;--mat-button-tonal-label-text-size: 19px;--mat-button-text-label-text-size: 19px;--mat-icon-button-focus-state-layer-opacity: 0;--mat-icon-button-hover-state-layer-opacity: 0;--mat-icon-button-pressed-state-layer-opacity: 0;--mat-icon-button-icon-color: var(--mat-sys-primary)}html .mat-mdc-button:hover,html .mat-mdc-icon-button:hover{color:color-mix(in srgb,var(--mat-sys-primary) 60%,transparent)}:root{--xs: 4px;--sm: 8px;--md: 16px;--lg: 24px;--xl: 32px;--primary: rgba(100, 41, 27, 1);--secondary: rgba(61, 73, 48, 1);--accent: rgba(144, 155, 123, 1);--white: rgb(255 255 255);--black: rgb(0 15 31);--transparent: rgb(0 0 0 / 0%)}@font-face{font-display:swap;font-family:Epilogue;font-style:normal;font-weight:300;src:url("./media/Epilogue-VariableFont_wght-ZAT5GPCD.ttf") format("tff")}@font-face{font-display:swap;font-family:Hurricane;font-style:normal;font-weight:400;src:url("./media/Hurricane-Regular-R4R4BXTQ.ttf") format("truetype")}
+</style><link rel="stylesheet" href="styles-2TTUAUCZ.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-2TTUAUCZ.css"></noscript><style ng-app-id="ng">[_nghost-ng-c2175440148]   .full-bleed[_ngcontent-ng-c2175440148]  .section-content{margin-top:60px}</style><style ng-app-id="ng">[_nghost-ng-c3742098816]   header[_ngcontent-ng-c3742098816]{padding-top:2rem}[_nghost-ng-c3742098816]   header.floating[_ngcontent-ng-c3742098816]{position:absolute;right:0;left:0;top:0}[_nghost-ng-c3742098816]   header[_ngcontent-ng-c3742098816]   .menu[_ngcontent-ng-c3742098816]{display:flex;align-items:center}[_nghost-ng-c3742098816]   .logo[_ngcontent-ng-c3742098816]{margin-right:auto}[_nghost-ng-c3742098816]   .logo[_ngcontent-ng-c3742098816]   a[_ngcontent-ng-c3742098816]{cursor:pointer}[_nghost-ng-c3742098816]   a[_ngcontent-ng-c3742098816]   mat-icon[_ngcontent-ng-c3742098816]{display:revert;color:#28341d}[_nghost-ng-c3742098816]   .navigation[_ngcontent-ng-c3742098816]{padding-right:20px;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:end}[_nghost-ng-c3742098816]   .navigation[_ngcontent-ng-c3742098816]   button[_ngcontent-ng-c3742098816]{color:#28341d}@media(max-width:950px){[_nghost-ng-c3742098816]   .navigation[_ngcontent-ng-c3742098816]{display:none}[_nghost-ng-c3742098816]   a[_ngcontent-ng-c3742098816]   mat-icon[_ngcontent-ng-c3742098816]{display:none}}</style><style ng-app-id="ng">[_nghost-ng-c2057262332]   .hero[_ngcontent-ng-c2057262332]{height:840px;max-height:100vh;overflow:hidden;padding:100px 0;background-image:linear-gradient(to bottom,transparent 0%,transparent 30%,rgba(0,0,0,.7) 100%),url(https://www.augsburg.de/fileadmin/_processed_/d/8/csm_250717_Website_2025_Titelbild_v01_1661366e19.jpg);background-position:center center;background-repeat:no-repeat;background-size:cover}[_nghost-ng-c2057262332]   .hero[_ngcontent-ng-c2057262332]   .hero-title[_ngcontent-ng-c2057262332]{margin-top:auto;color:#fff}@media(max-width:700px){[_nghost-ng-c2057262332]   .hero[_ngcontent-ng-c2057262332]{padding-bottom:40px}}</style><style ng-app-id="ng">[_nghost-ng-c28969004]{display:contents}[_nghost-ng-c28969004]   section[_ngcontent-ng-c28969004]{margin-top:80px}[_nghost-ng-c28969004]   section[_ngcontent-ng-c28969004]   .section-content[_ngcontent-ng-c28969004]{max-width:825px;margin:auto}[_nghost-ng-c28969004]   .title[_ngcontent-ng-c28969004]{margin:auto;text-align:center}[_nghost-ng-c28969004]   .title[_ngcontent-ng-c28969004]   .highlight[_ngcontent-ng-c28969004]{color:var(--mat-sys-inverse-primary)}[_nghost-ng-c28969004]   .subtitle[_ngcontent-ng-c28969004]{margin-top:40px;text-align:center;display:flex;flex-direction:column}[_nghost-ng-c28969004]   .italic-container[_ngcontent-ng-c28969004]{text-align:right}[_nghost-ng-c28969004]   .card-group[_ngcontent-ng-c28969004]{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}</style><style ng-app-id="ng">[_nghost-ng-c4237377951]{display:contents}[_nghost-ng-c4237377951]   .italic[_ngcontent-ng-c4237377951]{color:var(--mat-sys-on-primary-fixed);opacity:.8}[_nghost-ng-c4237377951]   .description[_ngcontent-ng-c4237377951]{text-align:center;max-width:1000px;margin:auto;padding-block:40px}[_nghost-ng-c4237377951]   .description-image-container[_ngcontent-ng-c4237377951]{display:grid;grid-template-columns:1fr 1fr;justify-content:center;align-items:center;gap:40px}[_nghost-ng-c4237377951]   .description-image-container[_ngcontent-ng-c4237377951]   .image-container[_ngcontent-ng-c4237377951]{align-self:center;justify-self:center}[_nghost-ng-c4237377951]   .description-image-container[_ngcontent-ng-c4237377951]   .image-container[_ngcontent-ng-c4237377951]   img[_ngcontent-ng-c4237377951]{width:100%;max-width:600px;height:auto}[_nghost-ng-c4237377951]   .invitation[_ngcontent-ng-c4237377951]{text-align:center;max-width:1000px;margin:60px auto 0}[_nghost-ng-c4237377951]   .invitation[_ngcontent-ng-c4237377951]   .invitation-title[_ngcontent-ng-c4237377951]{text-align:center;text-transform:uppercase;padding:24px}[_nghost-ng-c4237377951]   .quote[_ngcontent-ng-c4237377951]{margin-top:40px;margin-bottom:-20px}[_nghost-ng-c4237377951]   .quote[_ngcontent-ng-c4237377951]   .italic[_ngcontent-ng-c4237377951]{text-align:right;margin-right:-20px;margin-bottom:-40px}@media(max-width:700px){[_nghost-ng-c4237377951]   .description-image-container[_ngcontent-ng-c4237377951]{grid-template-columns:1fr}[_nghost-ng-c4237377951]   .description[_ngcontent-ng-c4237377951]{padding-block:20px 0}}</style><style ng-app-id="ng">[_nghost-ng-c3816506739]   .values-grid[_ngcontent-ng-c3816506739]{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}[_nghost-ng-c3816506739]   .values-grid[_ngcontent-ng-c3816506739]   .value-container[_ngcontent-ng-c3816506739]   h2[_ngcontent-ng-c3816506739], [_nghost-ng-c3816506739]   .values-grid[_ngcontent-ng-c3816506739]   .value-container[_ngcontent-ng-c3816506739]   h4[_ngcontent-ng-c3816506739]{color:#733425}[_nghost-ng-c3816506739]   .values-grid[_ngcontent-ng-c3816506739]   .value-container[_ngcontent-ng-c3816506739]   .message[_ngcontent-ng-c3816506739]{color:#ae6351}</style><style ng-app-id="ng">[_nghost-ng-c3444274038]{background-color:#561f11;display:block}[_nghost-ng-c3444274038]   section[_ngcontent-ng-c3444274038]   .title[_ngcontent-ng-c3444274038]{color:#fff}[_nghost-ng-c3444274038]   section[_ngcontent-ng-c3444274038]   .image-container[_ngcontent-ng-c3444274038]{display:flex;flex-direction:row;gap:40px;align-items:center;justify-content:space-between;padding-bottom:60px}[_nghost-ng-c3444274038]   section[_ngcontent-ng-c3444274038]   .image-container[_ngcontent-ng-c3444274038]   img[_ngcontent-ng-c3444274038]{width:100%;max-width:350px;height:auto}[_nghost-ng-c3444274038]   section[_ngcontent-ng-c3444274038]   .image-container[_ngcontent-ng-c3444274038]   .prayer-container[_ngcontent-ng-c3444274038]{max-width:500px;color:#fff}@media(max-width:700px){[_nghost-ng-c3444274038]   section[_ngcontent-ng-c3444274038]   .image-container[_ngcontent-ng-c3444274038]{flex-direction:column}}</style><style ng-app-id="ng">[_nghost-ng-c3390014412]   .story-container[_ngcontent-ng-c3390014412]{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:40px;padding-bottom:60px}[_nghost-ng-c3390014412]   .story-image[_ngcontent-ng-c3390014412]{height:500px;width:500px;background-position:center center;background-repeat:no-repeat;background-size:cover}[_nghost-ng-c3390014412]   .story-short[_ngcontent-ng-c3390014412]{max-width:50%}@media(max-width:700px){[_nghost-ng-c3390014412]   .story-container[_ngcontent-ng-c3390014412]{flex-direction:column}[_nghost-ng-c3390014412]   .story-short[_ngcontent-ng-c3390014412]{max-width:100%}[_nghost-ng-c3390014412]   .story-image[_ngcontent-ng-c3390014412]{max-width:100%}}</style><style ng-app-id="ng">[_nghost-ng-c1601500529]{display:block;overflow:hidden}[_nghost-ng-c1601500529]   .priest-presentation[_ngcontent-ng-c1601500529]{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:60px;padding-bottom:60px}[_nghost-ng-c1601500529]   .priest-presentation[_ngcontent-ng-c1601500529]   .priest-letter[_ngcontent-ng-c1601500529]{flex:1;position:relative}[_nghost-ng-c1601500529]   .priest-presentation[_ngcontent-ng-c1601500529]   img[_ngcontent-ng-c1601500529]{flex:1;max-width:500px}[_nghost-ng-c1601500529]   .priest-presentation[_ngcontent-ng-c1601500529]   .quotes-start[_ngcontent-ng-c1601500529]{--size: 250px;height:var(--size);width:var(--size);opacity:.5;position:absolute;top:0;right:0;transform:translateY(-60%) translate(30%)}@media(max-width:700px){[_nghost-ng-c1601500529]   .priest-presentation[_ngcontent-ng-c1601500529]{flex-direction:column}}</style><style ng-app-id="ng">[_nghost-ng-c2707461406]   .groups-grid[_ngcontent-ng-c2707461406]{display:grid;grid-template-columns:repeat(auto-fit,minmax(450px,1fr));gap:40px;margin-bottom:130px;margin-top:60px}@media(max-width:700px){[_nghost-ng-c2707461406]   .groups-grid[_ngcontent-ng-c2707461406]{grid-template-columns:1fr;margin-top:20px;margin-bottom:60px}}</style><style ng-app-id="ng">[_nghost-ng-c1102651894]{display:contents}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]{min-height:400px;background-color:var(--mat-sys-surface-container-highest);color:var(--mat-sys-primary);padding-top:var(--xl)}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   .footer-content[_ngcontent-ng-c1102651894]{gap:0;display:grid;grid-template-areas:"logo . connected" "contacts location connected" "buttons . ."}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   a[_ngcontent-ng-c1102651894]   mat-icon[_ngcontent-ng-c1102651894]{color:#28341d}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   img[_ngcontent-ng-c1102651894], [_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   .contacts[_ngcontent-ng-c1102651894]{padding-left:var(--mat-button-text-horizontal-padding, 12px)}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   h3[_ngcontent-ng-c1102651894], [_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   h5[_ngcontent-ng-c1102651894]{color:#28341d}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   .info-box[_ngcontent-ng-c1102651894]{margin-top:24px}@media(max-width:700px){[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   .footer-content[_ngcontent-ng-c1102651894]{grid-template-areas:". logo ." "connected connected connected" "contacts contacts contacts" "location location location" "buttons buttons buttons";gap:20px;align-items:center;justify-items:center}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   img[_ngcontent-ng-c1102651894], [_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   .contacts[_ngcontent-ng-c1102651894]{padding-left:0}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   .contacts[_ngcontent-ng-c1102651894], [_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   .location[_ngcontent-ng-c1102651894]{width:100%;text-align:center}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   .location[_ngcontent-ng-c1102651894]{margin-bottom:40px}[_nghost-ng-c1102651894]   footer[_ngcontent-ng-c1102651894]   .social-media[_ngcontent-ng-c1102651894]{display:flex;justify-content:center}}</style><style ng-app-id="ng">.mat-mdc-button-base {
+  text-decoration: none;
+}
+.mat-mdc-button-base .mat-icon {
+  min-height: fit-content;
+  flex-shrink: 0;
+}
+@media (hover: none) {
+  .mat-mdc-button-base:hover > span.mat-mdc-button-persistent-ripple::before {
+    opacity: 0;
+  }
+}
+
+.mdc-button {
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 64px;
+  border: none;
+  outline: none;
+  line-height: inherit;
+  -webkit-appearance: none;
+  overflow: visible;
+  vertical-align: middle;
+  background: transparent;
+  padding: 0 8px;
+}
+.mdc-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.mdc-button:active {
+  outline: none;
+}
+.mdc-button:hover {
+  cursor: pointer;
+}
+.mdc-button:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+.mdc-button[hidden] {
+  display: none;
+}
+.mdc-button .mdc-button__label {
+  position: relative;
+}
+
+.mat-mdc-button {
+  padding: 0 var(--mat-button-text-horizontal-padding, 12px);
+  height: var(--mat-button-text-container-height, 40px);
+  font-family: var(--mat-button-text-label-text-font, var(--mat-sys-label-large-font));
+  font-size: var(--mat-button-text-label-text-size, var(--mat-sys-label-large-size));
+  letter-spacing: var(--mat-button-text-label-text-tracking, var(--mat-sys-label-large-tracking));
+  text-transform: var(--mat-button-text-label-text-transform);
+  font-weight: var(--mat-button-text-label-text-weight, var(--mat-sys-label-large-weight));
+}
+.mat-mdc-button, .mat-mdc-button .mdc-button__ripple {
+  border-radius: var(--mat-button-text-container-shape, var(--mat-sys-corner-full));
+}
+.mat-mdc-button:not(:disabled) {
+  color: var(--mat-button-text-label-text-color, var(--mat-sys-primary));
+}
+.mat-mdc-button[disabled], .mat-mdc-button.mat-mdc-button-disabled {
+  cursor: default;
+  pointer-events: none;
+  color: var(--mat-button-text-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));
+}
+.mat-mdc-button.mat-mdc-button-disabled-interactive {
+  pointer-events: auto;
+}
+.mat-mdc-button:has(.material-icons, mat-icon, [matButtonIcon]) {
+  padding: 0 var(--mat-button-text-with-icon-horizontal-padding, 16px);
+}
+.mat-mdc-button > .mat-icon {
+  margin-right: var(--mat-button-text-icon-spacing, 8px);
+  margin-left: var(--mat-button-text-icon-offset, -4px);
+}
+[dir=rtl] .mat-mdc-button > .mat-icon {
+  margin-right: var(--mat-button-text-icon-offset, -4px);
+  margin-left: var(--mat-button-text-icon-spacing, 8px);
+}
+.mat-mdc-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-text-icon-offset, -4px);
+  margin-left: var(--mat-button-text-icon-spacing, 8px);
+}
+[dir=rtl] .mat-mdc-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-text-icon-spacing, 8px);
+  margin-left: var(--mat-button-text-icon-offset, -4px);
+}
+.mat-mdc-button .mat-ripple-element {
+  background-color: var(--mat-button-text-ripple-color, color-mix(in srgb, var(--mat-sys-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent));
+}
+.mat-mdc-button .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-text-state-layer-color, var(--mat-sys-primary));
+}
+.mat-mdc-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-text-disabled-state-layer-color, var(--mat-sys-on-surface-variant));
+}
+.mat-mdc-button:hover > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-text-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity));
+}
+.mat-mdc-button.cdk-program-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-button.cdk-keyboard-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-button.mat-mdc-button-disabled-interactive:focus > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-text-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity));
+}
+.mat-mdc-button:active > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-text-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity));
+}
+.mat-mdc-button .mat-mdc-button-touch-target {
+  position: absolute;
+  top: 50%;
+  height: var(--mat-button-text-touch-target-size, 48px);
+  display: var(--mat-button-text-touch-target-display, block);
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.mat-mdc-unelevated-button {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: var(--mat-button-filled-container-height, 40px);
+  font-family: var(--mat-button-filled-label-text-font, var(--mat-sys-label-large-font));
+  font-size: var(--mat-button-filled-label-text-size, var(--mat-sys-label-large-size));
+  letter-spacing: var(--mat-button-filled-label-text-tracking, var(--mat-sys-label-large-tracking));
+  text-transform: var(--mat-button-filled-label-text-transform);
+  font-weight: var(--mat-button-filled-label-text-weight, var(--mat-sys-label-large-weight));
+  padding: 0 var(--mat-button-filled-horizontal-padding, 24px);
+}
+.mat-mdc-unelevated-button > .mat-icon {
+  margin-right: var(--mat-button-filled-icon-spacing, 8px);
+  margin-left: var(--mat-button-filled-icon-offset, -8px);
+}
+[dir=rtl] .mat-mdc-unelevated-button > .mat-icon {
+  margin-right: var(--mat-button-filled-icon-offset, -8px);
+  margin-left: var(--mat-button-filled-icon-spacing, 8px);
+}
+.mat-mdc-unelevated-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-filled-icon-offset, -8px);
+  margin-left: var(--mat-button-filled-icon-spacing, 8px);
+}
+[dir=rtl] .mat-mdc-unelevated-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-filled-icon-spacing, 8px);
+  margin-left: var(--mat-button-filled-icon-offset, -8px);
+}
+.mat-mdc-unelevated-button .mat-ripple-element {
+  background-color: var(--mat-button-filled-ripple-color, color-mix(in srgb, var(--mat-sys-on-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent));
+}
+.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-filled-state-layer-color, var(--mat-sys-on-primary));
+}
+.mat-mdc-unelevated-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-filled-disabled-state-layer-color, var(--mat-sys-on-surface-variant));
+}
+.mat-mdc-unelevated-button:hover > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-filled-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity));
+}
+.mat-mdc-unelevated-button.cdk-program-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-unelevated-button.cdk-keyboard-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive:focus > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-filled-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity));
+}
+.mat-mdc-unelevated-button:active > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-filled-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity));
+}
+.mat-mdc-unelevated-button .mat-mdc-button-touch-target {
+  position: absolute;
+  top: 50%;
+  height: var(--mat-button-filled-touch-target-size, 48px);
+  display: var(--mat-button-filled-touch-target-display, block);
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.mat-mdc-unelevated-button:not(:disabled) {
+  color: var(--mat-button-filled-label-text-color, var(--mat-sys-on-primary));
+  background-color: var(--mat-button-filled-container-color, var(--mat-sys-primary));
+}
+.mat-mdc-unelevated-button, .mat-mdc-unelevated-button .mdc-button__ripple {
+  border-radius: var(--mat-button-filled-container-shape, var(--mat-sys-corner-full));
+}
+.mat-mdc-unelevated-button .mat-mdc-button-progress-indicator-container {
+  --mat-progress-spinner-active-indicator-color: var(--mat-button-filled-progress-active-indicator-color, var(--mat-sys-on-primary));
+}
+.mat-mdc-unelevated-button[disabled], .mat-mdc-unelevated-button.mat-mdc-button-disabled {
+  cursor: default;
+  pointer-events: none;
+  color: var(--mat-button-filled-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));
+  background-color: var(--mat-button-filled-disabled-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent));
+}
+.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive {
+  pointer-events: auto;
+}
+
+.mat-mdc-raised-button {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--mat-button-protected-container-elevation-shadow, var(--mat-sys-level1));
+  height: var(--mat-button-protected-container-height, 40px);
+  font-family: var(--mat-button-protected-label-text-font, var(--mat-sys-label-large-font));
+  font-size: var(--mat-button-protected-label-text-size, var(--mat-sys-label-large-size));
+  letter-spacing: var(--mat-button-protected-label-text-tracking, var(--mat-sys-label-large-tracking));
+  text-transform: var(--mat-button-protected-label-text-transform);
+  font-weight: var(--mat-button-protected-label-text-weight, var(--mat-sys-label-large-weight));
+  padding: 0 var(--mat-button-protected-horizontal-padding, 24px);
+}
+.mat-mdc-raised-button > .mat-icon {
+  margin-right: var(--mat-button-protected-icon-spacing, 8px);
+  margin-left: var(--mat-button-protected-icon-offset, -8px);
+}
+[dir=rtl] .mat-mdc-raised-button > .mat-icon {
+  margin-right: var(--mat-button-protected-icon-offset, -8px);
+  margin-left: var(--mat-button-protected-icon-spacing, 8px);
+}
+.mat-mdc-raised-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-protected-icon-offset, -8px);
+  margin-left: var(--mat-button-protected-icon-spacing, 8px);
+}
+[dir=rtl] .mat-mdc-raised-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-protected-icon-spacing, 8px);
+  margin-left: var(--mat-button-protected-icon-offset, -8px);
+}
+.mat-mdc-raised-button .mat-ripple-element {
+  background-color: var(--mat-button-protected-ripple-color, color-mix(in srgb, var(--mat-sys-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent));
+}
+.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-protected-state-layer-color, var(--mat-sys-primary));
+}
+.mat-mdc-raised-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-protected-disabled-state-layer-color, var(--mat-sys-on-surface-variant));
+}
+.mat-mdc-raised-button:hover > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-protected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity));
+}
+.mat-mdc-raised-button.cdk-program-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-raised-button.cdk-keyboard-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-raised-button.mat-mdc-button-disabled-interactive:focus > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-protected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity));
+}
+.mat-mdc-raised-button:active > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-protected-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity));
+}
+.mat-mdc-raised-button .mat-mdc-button-touch-target {
+  position: absolute;
+  top: 50%;
+  height: var(--mat-button-protected-touch-target-size, 48px);
+  display: var(--mat-button-protected-touch-target-display, block);
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.mat-mdc-raised-button:not(:disabled) {
+  color: var(--mat-button-protected-label-text-color, var(--mat-sys-primary));
+  background-color: var(--mat-button-protected-container-color, var(--mat-sys-surface));
+}
+.mat-mdc-raised-button, .mat-mdc-raised-button .mdc-button__ripple {
+  border-radius: var(--mat-button-protected-container-shape, var(--mat-sys-corner-full));
+}
+@media (hover: hover) {
+  .mat-mdc-raised-button:hover {
+    box-shadow: var(--mat-button-protected-hover-container-elevation-shadow, var(--mat-sys-level2));
+  }
+}
+.mat-mdc-raised-button:focus {
+  box-shadow: var(--mat-button-protected-focus-container-elevation-shadow, var(--mat-sys-level1));
+}
+.mat-mdc-raised-button:active, .mat-mdc-raised-button:focus:active {
+  box-shadow: var(--mat-button-protected-pressed-container-elevation-shadow, var(--mat-sys-level1));
+}
+.mat-mdc-raised-button[disabled], .mat-mdc-raised-button.mat-mdc-button-disabled {
+  cursor: default;
+  pointer-events: none;
+  color: var(--mat-button-protected-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));
+  background-color: var(--mat-button-protected-disabled-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent));
+}
+.mat-mdc-raised-button[disabled].mat-mdc-button-disabled, .mat-mdc-raised-button.mat-mdc-button-disabled.mat-mdc-button-disabled {
+  box-shadow: var(--mat-button-protected-disabled-container-elevation-shadow, var(--mat-sys-level0));
+}
+.mat-mdc-raised-button.mat-mdc-button-disabled-interactive {
+  pointer-events: auto;
+}
+
+.mat-mdc-outlined-button {
+  border-style: solid;
+  transition: border 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: var(--mat-button-outlined-container-height, 40px);
+  font-family: var(--mat-button-outlined-label-text-font, var(--mat-sys-label-large-font));
+  font-size: var(--mat-button-outlined-label-text-size, var(--mat-sys-label-large-size));
+  letter-spacing: var(--mat-button-outlined-label-text-tracking, var(--mat-sys-label-large-tracking));
+  text-transform: var(--mat-button-outlined-label-text-transform);
+  font-weight: var(--mat-button-outlined-label-text-weight, var(--mat-sys-label-large-weight));
+  border-radius: var(--mat-button-outlined-container-shape, var(--mat-sys-corner-full));
+  border-width: var(--mat-button-outlined-outline-width, 1px);
+  padding: 0 var(--mat-button-outlined-horizontal-padding, 24px);
+}
+.mat-mdc-outlined-button > .mat-icon {
+  margin-right: var(--mat-button-outlined-icon-spacing, 8px);
+  margin-left: var(--mat-button-outlined-icon-offset, -8px);
+}
+[dir=rtl] .mat-mdc-outlined-button > .mat-icon {
+  margin-right: var(--mat-button-outlined-icon-offset, -8px);
+  margin-left: var(--mat-button-outlined-icon-spacing, 8px);
+}
+.mat-mdc-outlined-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-outlined-icon-offset, -8px);
+  margin-left: var(--mat-button-outlined-icon-spacing, 8px);
+}
+[dir=rtl] .mat-mdc-outlined-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-outlined-icon-spacing, 8px);
+  margin-left: var(--mat-button-outlined-icon-offset, -8px);
+}
+.mat-mdc-outlined-button .mat-ripple-element {
+  background-color: var(--mat-button-outlined-ripple-color, color-mix(in srgb, var(--mat-sys-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent));
+}
+.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-outlined-state-layer-color, var(--mat-sys-primary));
+}
+.mat-mdc-outlined-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-outlined-disabled-state-layer-color, var(--mat-sys-on-surface-variant));
+}
+.mat-mdc-outlined-button:hover > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-outlined-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity));
+}
+.mat-mdc-outlined-button.cdk-program-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-outlined-button.cdk-keyboard-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-outlined-button.mat-mdc-button-disabled-interactive:focus > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-outlined-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity));
+}
+.mat-mdc-outlined-button:active > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-outlined-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity));
+}
+.mat-mdc-outlined-button .mat-mdc-button-touch-target {
+  position: absolute;
+  top: 50%;
+  height: var(--mat-button-outlined-touch-target-size, 48px);
+  display: var(--mat-button-outlined-touch-target-display, block);
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.mat-mdc-outlined-button:not(:disabled) {
+  color: var(--mat-button-outlined-label-text-color, var(--mat-sys-primary));
+  border-color: var(--mat-button-outlined-outline-color, var(--mat-sys-outline));
+}
+.mat-mdc-outlined-button[disabled], .mat-mdc-outlined-button.mat-mdc-button-disabled {
+  cursor: default;
+  pointer-events: none;
+  color: var(--mat-button-outlined-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));
+  border-color: var(--mat-button-outlined-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent));
+}
+.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive {
+  pointer-events: auto;
+}
+
+.mat-tonal-button {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: var(--mat-button-tonal-container-height, 40px);
+  font-family: var(--mat-button-tonal-label-text-font, var(--mat-sys-label-large-font));
+  font-size: var(--mat-button-tonal-label-text-size, var(--mat-sys-label-large-size));
+  letter-spacing: var(--mat-button-tonal-label-text-tracking, var(--mat-sys-label-large-tracking));
+  text-transform: var(--mat-button-tonal-label-text-transform);
+  font-weight: var(--mat-button-tonal-label-text-weight, var(--mat-sys-label-large-weight));
+  padding: 0 var(--mat-button-tonal-horizontal-padding, 24px);
+}
+.mat-tonal-button:not(:disabled) {
+  color: var(--mat-button-tonal-label-text-color, var(--mat-sys-on-secondary-container));
+  background-color: var(--mat-button-tonal-container-color, var(--mat-sys-secondary-container));
+}
+.mat-tonal-button, .mat-tonal-button .mdc-button__ripple {
+  border-radius: var(--mat-button-tonal-container-shape, var(--mat-sys-corner-full));
+}
+.mat-tonal-button[disabled], .mat-tonal-button.mat-mdc-button-disabled {
+  cursor: default;
+  pointer-events: none;
+  color: var(--mat-button-tonal-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));
+  background-color: var(--mat-button-tonal-disabled-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent));
+}
+.mat-tonal-button.mat-mdc-button-disabled-interactive {
+  pointer-events: auto;
+}
+.mat-tonal-button > .mat-icon {
+  margin-right: var(--mat-button-tonal-icon-spacing, 8px);
+  margin-left: var(--mat-button-tonal-icon-offset, -8px);
+}
+[dir=rtl] .mat-tonal-button > .mat-icon {
+  margin-right: var(--mat-button-tonal-icon-offset, -8px);
+  margin-left: var(--mat-button-tonal-icon-spacing, 8px);
+}
+.mat-tonal-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-tonal-icon-offset, -8px);
+  margin-left: var(--mat-button-tonal-icon-spacing, 8px);
+}
+[dir=rtl] .mat-tonal-button .mdc-button__label + .mat-icon {
+  margin-right: var(--mat-button-tonal-icon-spacing, 8px);
+  margin-left: var(--mat-button-tonal-icon-offset, -8px);
+}
+.mat-tonal-button .mat-ripple-element {
+  background-color: var(--mat-button-tonal-ripple-color, color-mix(in srgb, var(--mat-sys-on-secondary-container) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent));
+}
+.mat-tonal-button .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-tonal-state-layer-color, var(--mat-sys-on-secondary-container));
+}
+.mat-tonal-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-button-tonal-disabled-state-layer-color, var(--mat-sys-on-surface-variant));
+}
+.mat-tonal-button:hover > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-tonal-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity));
+}
+.mat-tonal-button.cdk-program-focused > .mat-mdc-button-persistent-ripple::before, .mat-tonal-button.cdk-keyboard-focused > .mat-mdc-button-persistent-ripple::before, .mat-tonal-button.mat-mdc-button-disabled-interactive:focus > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-tonal-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity));
+}
+.mat-tonal-button:active > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-button-tonal-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity));
+}
+.mat-tonal-button .mat-mdc-button-touch-target {
+  position: absolute;
+  top: 50%;
+  height: var(--mat-button-tonal-touch-target-size, 48px);
+  display: var(--mat-button-tonal-touch-target-display, block);
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.mat-mdc-button,
+.mat-mdc-unelevated-button,
+.mat-mdc-raised-button,
+.mat-mdc-outlined-button,
+.mat-tonal-button {
+  -webkit-tap-highlight-color: transparent;
+}
+.mat-mdc-button .mat-mdc-button-ripple,
+.mat-mdc-button .mat-mdc-button-persistent-ripple,
+.mat-mdc-button .mat-mdc-button-persistent-ripple::before,
+.mat-mdc-unelevated-button .mat-mdc-button-ripple,
+.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple,
+.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,
+.mat-mdc-raised-button .mat-mdc-button-ripple,
+.mat-mdc-raised-button .mat-mdc-button-persistent-ripple,
+.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,
+.mat-mdc-outlined-button .mat-mdc-button-ripple,
+.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple,
+.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before,
+.mat-tonal-button .mat-mdc-button-ripple,
+.mat-tonal-button .mat-mdc-button-persistent-ripple,
+.mat-tonal-button .mat-mdc-button-persistent-ripple::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.mat-mdc-button .mat-mdc-button-ripple,
+.mat-mdc-unelevated-button .mat-mdc-button-ripple,
+.mat-mdc-raised-button .mat-mdc-button-ripple,
+.mat-mdc-outlined-button .mat-mdc-button-ripple,
+.mat-tonal-button .mat-mdc-button-ripple {
+  overflow: hidden;
+}
+.mat-mdc-button .mat-mdc-button-persistent-ripple::before,
+.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,
+.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,
+.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before,
+.mat-tonal-button .mat-mdc-button-persistent-ripple::before {
+  content: "";
+  opacity: 0;
+}
+.mat-mdc-button .mdc-button__label,
+.mat-mdc-button .mat-icon,
+.mat-mdc-unelevated-button .mdc-button__label,
+.mat-mdc-unelevated-button .mat-icon,
+.mat-mdc-raised-button .mdc-button__label,
+.mat-mdc-raised-button .mat-icon,
+.mat-mdc-outlined-button .mdc-button__label,
+.mat-mdc-outlined-button .mat-icon,
+.mat-tonal-button .mdc-button__label,
+.mat-tonal-button .mat-icon {
+  z-index: 1;
+  position: relative;
+}
+.mat-mdc-button .mat-focus-indicator,
+.mat-mdc-unelevated-button .mat-focus-indicator,
+.mat-mdc-raised-button .mat-focus-indicator,
+.mat-mdc-outlined-button .mat-focus-indicator,
+.mat-tonal-button .mat-focus-indicator {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: inherit;
+}
+.mat-mdc-button:focus-visible > .mat-focus-indicator::before,
+.mat-mdc-unelevated-button:focus-visible > .mat-focus-indicator::before,
+.mat-mdc-raised-button:focus-visible > .mat-focus-indicator::before,
+.mat-mdc-outlined-button:focus-visible > .mat-focus-indicator::before,
+.mat-tonal-button:focus-visible > .mat-focus-indicator::before {
+  content: "";
+  border-radius: inherit;
+}
+.mat-mdc-button._mat-animation-noopable,
+.mat-mdc-unelevated-button._mat-animation-noopable,
+.mat-mdc-raised-button._mat-animation-noopable,
+.mat-mdc-outlined-button._mat-animation-noopable,
+.mat-tonal-button._mat-animation-noopable {
+  transition: none !important;
+  animation: none !important;
+}
+.mat-mdc-button > .mat-icon,
+.mat-mdc-unelevated-button > .mat-icon,
+.mat-mdc-raised-button > .mat-icon,
+.mat-mdc-outlined-button > .mat-icon,
+.mat-tonal-button > .mat-icon {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-size: 1.125rem;
+  height: 1.125rem;
+  width: 1.125rem;
+}
+
+.mat-mdc-outlined-button .mat-mdc-button-ripple,
+.mat-mdc-outlined-button .mdc-button__ripple {
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+}
+
+.mat-mdc-unelevated-button .mat-focus-indicator::before,
+.mat-tonal-button .mat-focus-indicator::before,
+.mat-mdc-raised-button .mat-focus-indicator::before {
+  margin: calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px) * -1);
+}
+
+.mat-mdc-outlined-button .mat-focus-indicator::before {
+  margin: calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px) * -1);
+}
+
+.mat-mdc-button-progress-indicator-container {
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mat-mdc-button-progress-indicator-shown mat-icon,
+.mat-mdc-button-progress-indicator-shown [matButtonIcon],
+.mat-mdc-button-progress-indicator-shown .mdc-button__label {
+  visibility: hidden;
+}
+</style><style ng-app-id="ng">@media (forced-colors: active) {
+  .mat-mdc-button:not(.mdc-button--outlined),
+  .mat-mdc-unelevated-button:not(.mdc-button--outlined),
+  .mat-mdc-raised-button:not(.mdc-button--outlined),
+  .mat-mdc-outlined-button:not(.mdc-button--outlined),
+  .mat-mdc-button-base.mat-tonal-button,
+  .mat-mdc-icon-button.mat-mdc-icon-button,
+  .mat-mdc-outlined-button .mdc-button__ripple {
+    outline: solid 1px;
+  }
+}
+</style><style ng-app-id="ng">.mat-focus-indicator {
+  position: relative;
+}
+.mat-focus-indicator::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  box-sizing: border-box;
+  pointer-events: none;
+  display: var(--mat-focus-indicator-display, none);
+  border-width: var(--mat-focus-indicator-border-width, 3px);
+  border-style: var(--mat-focus-indicator-border-style, solid);
+  border-color: var(--mat-focus-indicator-border-color, transparent);
+  border-radius: var(--mat-focus-indicator-border-radius, 4px);
+}
+.mat-focus-indicator:focus-visible::before {
+  content: "";
+}
+
+@media (forced-colors: active) {
+  html {
+    --mat-focus-indicator-display: block;
+  }
+}
+</style><style ng-app-id="ng">.mat-mdc-icon-button {
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  fill: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 0;
+  overflow: visible;
+  border-radius: var(--mat-icon-button-container-shape, var(--mat-sys-corner-full, 50%));
+  flex-shrink: 0;
+  text-align: center;
+  width: var(--mat-icon-button-state-layer-size, 40px);
+  height: var(--mat-icon-button-state-layer-size, 40px);
+  padding: calc(calc(var(--mat-icon-button-state-layer-size, 40px) - var(--mat-icon-button-icon-size, 24px)) / 2);
+  font-size: var(--mat-icon-button-icon-size, 24px);
+  color: var(--mat-icon-button-icon-color, var(--mat-sys-on-surface-variant));
+  -webkit-tap-highlight-color: transparent;
+}
+.mat-mdc-icon-button .mat-mdc-button-ripple,
+.mat-mdc-icon-button .mat-mdc-button-persistent-ripple,
+.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.mat-mdc-icon-button .mat-mdc-button-ripple {
+  overflow: hidden;
+}
+.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before {
+  content: "";
+  opacity: 0;
+}
+.mat-mdc-icon-button .mdc-button__label,
+.mat-mdc-icon-button .mat-icon {
+  z-index: 1;
+  position: relative;
+}
+.mat-mdc-icon-button .mat-focus-indicator {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: inherit;
+}
+.mat-mdc-icon-button:focus-visible > .mat-focus-indicator::before {
+  content: "";
+  border-radius: inherit;
+}
+.mat-mdc-icon-button .mat-ripple-element {
+  background-color: var(--mat-icon-button-ripple-color, color-mix(in srgb, var(--mat-sys-on-surface-variant) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent));
+}
+.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-icon-button-state-layer-color, var(--mat-sys-on-surface-variant));
+}
+.mat-mdc-icon-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before {
+  background-color: var(--mat-icon-button-disabled-state-layer-color, var(--mat-sys-on-surface-variant));
+}
+.mat-mdc-icon-button:hover > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-icon-button-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity));
+}
+.mat-mdc-icon-button.cdk-program-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-icon-button.cdk-keyboard-focused > .mat-mdc-button-persistent-ripple::before, .mat-mdc-icon-button.mat-mdc-button-disabled-interactive:focus > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-icon-button-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity));
+}
+.mat-mdc-icon-button:active > .mat-mdc-button-persistent-ripple::before {
+  opacity: var(--mat-icon-button-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity));
+}
+.mat-mdc-icon-button .mat-mdc-button-touch-target {
+  position: absolute;
+  top: 50%;
+  height: var(--mat-icon-button-touch-target-size, 48px);
+  display: var(--mat-icon-button-touch-target-display, block);
+  left: 50%;
+  width: var(--mat-icon-button-touch-target-size, 48px);
+  transform: translate(-50%, -50%);
+}
+.mat-mdc-icon-button._mat-animation-noopable {
+  transition: none !important;
+  animation: none !important;
+}
+.mat-mdc-icon-button[disabled], .mat-mdc-icon-button.mat-mdc-button-disabled {
+  cursor: default;
+  pointer-events: none;
+  color: var(--mat-icon-button-disabled-icon-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));
+}
+.mat-mdc-icon-button.mat-mdc-button-disabled-interactive {
+  pointer-events: auto;
+}
+.mat-mdc-icon-button img,
+.mat-mdc-icon-button svg {
+  width: var(--mat-icon-button-icon-size, 24px);
+  height: var(--mat-icon-button-icon-size, 24px);
+  vertical-align: baseline;
+}
+.mat-mdc-icon-button .mat-mdc-button-progress-indicator-container .mdc-circular-progress__determinate-circle-graphic {
+  width: inherit;
+  height: inherit;
+}
+.mat-mdc-icon-button .mat-mdc-button-progress-indicator-container .mdc-circular-progress__indeterminate-circle-graphic {
+  height: 100%;
+}
+.mat-mdc-icon-button .mat-mdc-button-persistent-ripple {
+  border-radius: var(--mat-icon-button-container-shape, var(--mat-sys-corner-full, 50%));
+}
+.mat-mdc-icon-button[hidden] {
+  display: none;
+}
+.mat-mdc-icon-button.mat-unthemed:not(.mdc-ripple-upgraded):focus::before, .mat-mdc-icon-button.mat-primary:not(.mdc-ripple-upgraded):focus::before, .mat-mdc-icon-button.mat-accent:not(.mdc-ripple-upgraded):focus::before, .mat-mdc-icon-button.mat-warn:not(.mdc-ripple-upgraded):focus::before {
+  background: transparent;
+  opacity: 1;
+}
+
+.mat-mdc-button-progress-indicator-container {
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mat-mdc-button-progress-indicator-shown mat-icon {
+  visibility: hidden;
+}
+</style><style ng-app-id="ng">mat-icon, mat-icon.mat-primary, mat-icon.mat-accent, mat-icon.mat-warn {
+  color: var(--mat-icon-color, inherit);
+}
+
+.mat-icon {
+  -webkit-user-select: none;
+  user-select: none;
+  background-repeat: no-repeat;
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+  overflow: hidden;
+}
+.mat-icon.mat-icon-inline {
+  font-size: inherit;
+  height: inherit;
+  line-height: inherit;
+  width: inherit;
+}
+.mat-icon.mat-ligature-font[fontIcon]::before {
+  content: attr(fontIcon);
+}
+
+[dir=rtl] .mat-icon-rtl-mirror {
+  transform: scale(-1, 1);
+}
+
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon {
+  display: block;
+}
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon {
+  margin: auto;
+}
+</style><style ng-app-id="ng">[_nghost-ng-c555012062]   .card[_ngcontent-ng-c555012062]{background-position:center center;background-repeat:no-repeat;background-size:cover;border-radius:30px;height:520px;position:relative}[_nghost-ng-c555012062]   .card[_ngcontent-ng-c555012062]:before{content:"";position:absolute;inset:0;background:#00000080;border-radius:inherit}[_nghost-ng-c555012062]   .card[_ngcontent-ng-c555012062]   .card-content[_ngcontent-ng-c555012062]{position:absolute;inset:0;padding:40px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;color:var(--mat-sys-on-primary);z-index:1}[_nghost-ng-c555012062]   .card[_ngcontent-ng-c555012062]   .card-title[_ngcontent-ng-c555012062]{color:var(--mat-sys-on-primary)}[_nghost-ng-c555012062]   .card[_ngcontent-ng-c555012062]   button[_ngcontent-ng-c555012062]{color:var(--mat-sys-on-primary-fixed)}</style><style ng-app-id="ng">[_nghost-ng-c2197175584]   section[_ngcontent-ng-c2197175584]{background-color:var(--section-background-color);color:var(--section-color);min-height:640px}[_nghost-ng-c2197175584]   section[_ngcontent-ng-c2197175584]   .subtitle-container[_ngcontent-ng-c2197175584]{transform:translateY(-50%);padding-left:40px;opacity:.6}[_nghost-ng-c2197175584]   section[_ngcontent-ng-c2197175584]   .subtitle-container[_ngcontent-ng-c2197175584]   .italic[_ngcontent-ng-c2197175584]{color:var(--section-color)}@media(max-width:700px){[_nghost-ng-c2197175584]   section[_ngcontent-ng-c2197175584]   .subtitle-container[_ngcontent-ng-c2197175584]{transform:translateY(0);padding-bottom:40px}}</style><link _ngcontent-ng-c3742098816 as="image" href="/images/logo.svg" rel="preload" fetchpriority="high"></head>
+<body><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
+</script><script>window.__jsaction_bootstrap(document.body,"ng",["click"],[]);</script>
+<mci-root ng-version="22.0.1" ngh="12" ng-server-context="ssg"><router-outlet></router-outlet><mci-app _nghost-ng-c2175440148 ngh="2"><mci-header _ngcontent-ng-c2175440148 _nghost-ng-c3742098816 ngh="3"><header _ngcontent-ng-c3742098816 class="width-container floating"><div _ngcontent-ng-c3742098816 class="content menu"><div _ngcontent-ng-c3742098816 class="logo"><a _ngcontent-ng-c3742098816 routerlink="/" href="/" jsaction="click:;"><img _ngcontent-ng-c3742098816 alt="MCI logo" height="60" width="60" ngsrc="/images/logo.svg" priority="1" loading="eager" fetchpriority="high" decoding="sync" ng-img="true" src="/images/logo.svg"></a></div><div _ngcontent-ng-c3742098816 class="navigation"><button _ngcontent-ng-c3742098816 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Home</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3742098816 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Storia</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3742098816 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Parroci</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3742098816 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Pfarramt</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3742098816 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Galleria</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3742098816 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Contatti</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3742098816 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Calendario messe</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3742098816 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Notizie</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3742098816 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Carlo Acutis</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div><a _ngcontent-ng-c3742098816 mat-icon-button href="https://www.facebook.com/profile.php?id=61583487631617" class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" mat-ripple-loader-centered ngh="1"><span class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"></span><mat-icon _ngcontent-ng-c3742098816 role="img" svgicon="facebook" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="facebook" ngh="2"><svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false"><defs id="defs2"/>
+  <path id="path1" d="M 20 0 C 9 0 0 9 0 20 C -2.3684758e-15 29.9 7.1992188 38.100781 16.699219 39.800781 L 16.820312 39.701172 C 16.813829 39.7 16.807265 39.700398 16.800781 39.699219 L 16.800781 25.599609 L 11.800781 25.599609 L 11.800781 20 L 16.800781 20 L 16.800781 15.599609 C 16.800781 10.599609 19.999609 7.8007812 24.599609 7.8007812 C 25.999609 7.8007812 27.6 7.9992187 29 8.1992188 L 29 13.300781 L 26.400391 13.300781 C 24.000391 13.300781 23.400391 14.499609 23.400391 16.099609 L 23.400391 20 L 28.699219 20 L 27.800781 25.599609 L 23.400391 25.599609 L 23.400391 39.699219 C 23.336643 39.710809 23.272732 39.713691 23.208984 39.724609 L 23.300781 39.800781 C 32.800781 38.100781 40 29.9 40 20 C 40 9 31 0 20 0 z " fill="currentColor"/>
+</svg></mat-icon><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3742098816 mat-icon-button routerlink="/" class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" mat-ripple-loader-centered href="/" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"></span><mat-icon _ngcontent-ng-c3742098816 role="img" svgicon="instagram" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="instagram" ngh="2"><svg viewBox="0 0 96 96" version="1.1" id="svg9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+  <defs id="defs7">
+    <linearGradient id="b">
+      <stop offset="0" stop-color="#3771c8" id="stop1"/>
+      <stop stop-color="#3771c8" offset=".128" id="stop2"/>
+      <stop offset="1" stop-color="#60f" stop-opacity="0" id="stop3"/>
+    </linearGradient>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#fd5" id="stop4"/>
+      <stop offset=".1" stop-color="#fd5" id="stop5"/>
+      <stop offset=".5" stop-color="#ff543e" id="stop6"/>
+      <stop offset="1" stop-color="#c837ab" id="stop7"/>
+    </linearGradient>
+    <radialGradient id="c" cx="158.429" cy="578.08801" r="65" xlink:href="#a" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-1.98198,1.8439,0,-1230.0539,359.90723)" fx="158.429" fy="578.08801"/>
+    <radialGradient id="d" cx="147.694" cy="473.45499" r="65" xlink:href="#b" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.17394,0.86872,-3.5818,0.71718,1648.348,-458.493)" fx="147.694" fy="473.45499"/>
+  </defs>
+  <path fill="currentColor" d="M 48.004,0 C 34.968,0 33.332,0.057 28.212,0.29 c -5.11,0.234 -8.598,1.043 -11.65,2.23 -3.157,1.226 -5.835,2.866 -8.503,5.535 -2.67,2.668 -4.31,5.346 -5.54,8.502 -1.19,3.053 -2,6.542 -2.23,11.65 C 0.06,33.327 0,34.964 0,48 c 0,13.036 0.058,14.667 0.29,19.787 0.235,5.11 1.044,8.598 2.23,11.65 1.227,3.157 2.867,5.835 5.536,8.503 2.667,2.67 5.345,4.314 8.5,5.54 3.054,1.187 6.543,1.996 11.652,2.23 5.12,0.233 6.755,0.29 19.79,0.29 13.037,0 14.668,-0.057 19.788,-0.29 5.11,-0.234 8.602,-1.043 11.656,-2.23 3.156,-1.226 5.83,-2.87 8.497,-5.54 2.67,-2.668 4.31,-5.346 5.54,-8.502 1.18,-3.053 1.99,-6.542 2.23,-11.65 0.23,-5.12 0.29,-6.752 0.29,-19.788 0,-13.036 -0.06,-14.672 -0.29,-19.792 -0.24,-5.11 -1.05,-8.598 -2.23,-11.65 -1.23,-3.157 -2.87,-5.835 -5.54,-8.503 -2.67,-2.67 -5.34,-4.31 -8.5,-5.535 C 76.379,1.333 72.889,0.524 67.779,0.29 62.659,0.057 61.029,0 47.989,0 Z m -4.306,8.65 c 1.278,-0.002 2.704,0 4.306,0 12.816,0 14.335,0.046 19.396,0.276 4.68,0.214 7.22,0.996 8.912,1.653 2.24,0.87 3.837,1.91 5.516,3.59 1.68,1.68 2.72,3.28 3.592,5.52 0.657,1.69 1.44,4.23 1.653,8.91 0.23,5.06 0.28,6.58 0.28,19.39 0,12.81 -0.05,14.33 -0.28,19.39 -0.214,4.68 -0.996,7.22 -1.653,8.91 -0.87,2.24 -1.912,3.835 -3.592,5.514 -1.68,1.68 -3.275,2.72 -5.516,3.59 -1.69,0.66 -4.232,1.44 -8.912,1.654 -5.06,0.23 -6.58,0.28 -19.396,0.28 -12.817,0 -14.336,-0.05 -19.396,-0.28 -4.68,-0.216 -7.22,-0.998 -8.913,-1.655 -2.24,-0.87 -3.84,-1.91 -5.52,-3.59 -1.68,-1.68 -2.72,-3.276 -3.592,-5.517 -0.657,-1.69 -1.44,-4.23 -1.653,-8.91 -0.23,-5.06 -0.276,-6.58 -0.276,-19.398 0,-12.818 0.046,-14.33 0.276,-19.39 0.214,-4.68 0.996,-7.22 1.653,-8.912 0.87,-2.24 1.912,-3.84 3.592,-5.52 1.68,-1.68 3.28,-2.72 5.52,-3.592 1.692,-0.66 4.233,-1.44 8.913,-1.655 4.428,-0.2 6.144,-0.26 15.09,-0.27 z m 29.928,7.97 c -3.18,0 -5.76,2.577 -5.76,5.758 0,3.18 2.58,5.76 5.76,5.76 3.18,0 5.76,-2.58 5.76,-5.76 0,-3.18 -2.58,-5.76 -5.76,-5.76 z m -25.622,6.73 c -13.613,0 -24.65,11.037 -24.65,24.65 0,13.613 11.037,24.645 24.65,24.645 C 61.617,72.645 72.65,61.613 72.65,48 72.65,34.387 61.616,23.35 48.003,23.35 Z m 0,8.65 c 8.836,0 16,7.163 16,16 0,8.836 -7.164,16 -16,16 -8.837,0 -16,-7.164 -16,-16 0,-8.837 7.163,-16 16,-16 z" id="path9"/>
+</svg></mat-icon><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a></div></header></mci-header><mci-hero _ngcontent-ng-c2175440148 _nghost-ng-c2057262332 ngh="2"><div _ngcontent-ng-c2057262332 class="hero width-container"><div _ngcontent-ng-c2057262332 class="content hero-title"><h1 _ngcontent-ng-c2057262332><div _ngcontent-ng-c2057262332>Missione Cattolica</div><div _ngcontent-ng-c2057262332>Italiana</div></h1><h2 _ngcontent-ng-c2057262332>Augsburg</h2></div></div></mci-hero><div _ngcontent-ng-c2175440148 class="height-container"><mci-welcome _ngcontent-ng-c2175440148 _nghost-ng-c28969004 ngh="2"><section _ngcontent-ng-c28969004 class="width-container"><div _ngcontent-ng-c28969004 class="content"><div _ngcontent-ng-c28969004 class="section-content"><h2 _ngcontent-ng-c28969004 class="title"><div _ngcontent-ng-c28969004 class="row"><span _ngcontent-ng-c28969004>Una Chiesa che crede in</span></div><div _ngcontent-ng-c28969004 class="row"><span _ngcontent-ng-c28969004>Dio, </span><span _ngcontent-ng-c28969004 class="highlight">una Chiesa che accoglie e</span></div><div _ngcontent-ng-c28969004 class="row"><span _ngcontent-ng-c28969004 class="highlight">costruisce </span><span _ngcontent-ng-c28969004>comunità.</span></div></h2><div _ngcontent-ng-c28969004 class="subtitle size-default"><span _ngcontent-ng-c28969004>Viviamo la nostra fede come comunità di italiani ad Augsburg, pregando e</span><span _ngcontent-ng-c28969004>celebrando insieme, nella bellezza della nostra tradizione italiana e nella </span><span _ngcontent-ng-c28969004>realtà della vita qui in Germania.</span></div></div><div _ngcontent-ng-c28969004><div _ngcontent-ng-c28969004 class="italic-container"><span _ngcontent-ng-c28969004 class="italic italic-size-big">Qui sei sempre il benvenuto.</span></div><div _ngcontent-ng-c28969004 class="card-group"><mci-card _ngcontent-ng-c28969004 imgurl="https://images.pexels.com/photos/5418308/pexels-photo-5418308.jpeg" title="Sono nuovo" text="Siamo felici che tu sia qui. Nella nostra comunità puoi trovare un luogo in cui sentirti accolto, condividere la fede e conoscere nuove persone." buttontext="Vieni a trovarci" _nghost-ng-c555012062 ngh="4"><div _ngcontent-ng-c555012062 class="card" style="background-image: url(https://images.pexels.com/photos/5418308/pexels-photo-5418308.jpeg);"><div _ngcontent-ng-c555012062 class="card-content"><h4 _ngcontent-ng-c555012062 class="card-title">Sono nuovo</h4><p _ngcontent-ng-c555012062 class="card-text">Siamo felici che tu sia qui. Nella nostra comunità puoi trovare un luogo in cui sentirti accolto, condividere la fede e conoscere nuove persone.</p><button _ngcontent-ng-c555012062 matbutton="tonal" class="mdc-button mat-mdc-button-base mat-tonal-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Vieni a trovarci</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><!----></div></div></mci-card><mci-card _ngcontent-ng-c28969004 imgurl="https://de.terencehill.com/images/this_and_that/interview_2/header_image.jpg" title="Parliamone insieme" text="Hai domande o desideri un consiglio? Il nostro parroco è qui per ascoltarti e accompagnarti nel tuo cammino di fede." buttontext="Contatta il parroco" _nghost-ng-c555012062 ngh="4"><div _ngcontent-ng-c555012062 class="card" style="background-image: url(https://de.terencehill.com/images/this_and_that/interview_2/header_image.jpg);"><div _ngcontent-ng-c555012062 class="card-content"><h4 _ngcontent-ng-c555012062 class="card-title">Parliamone insieme</h4><p _ngcontent-ng-c555012062 class="card-text">Hai domande o desideri un consiglio? Il nostro parroco è qui per ascoltarti e accompagnarti nel tuo cammino di fede.</p><button _ngcontent-ng-c555012062 matbutton="tonal" class="mdc-button mat-mdc-button-base mat-tonal-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Contatta il parroco</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><!----></div></div></mci-card><mci-card _ngcontent-ng-c28969004 imgurl="https://temple-of-god.cmsmasters.studio/church/wp-content/uploads/sites/3/2023/02/home-4.jpg" title="Vivi la comunità" text="La fede cresce anche attraverso le relazioni. Scopri le occasioni per incontrarsi e condividere esperienze mantenendo viva la lingua italiana." buttontext="Scopri le attività" _nghost-ng-c555012062 ngh="4"><div _ngcontent-ng-c555012062 class="card" style="background-image: url(https://temple-of-god.cmsmasters.studio/church/wp-content/uploads/sites/3/2023/02/home-4.jpg);"><div _ngcontent-ng-c555012062 class="card-content"><h4 _ngcontent-ng-c555012062 class="card-title">Vivi la comunità</h4><p _ngcontent-ng-c555012062 class="card-text">La fede cresce anche attraverso le relazioni. Scopri le occasioni per incontrarsi e condividere esperienze mantenendo viva la lingua italiana.</p><button _ngcontent-ng-c555012062 matbutton="tonal" class="mdc-button mat-mdc-button-base mat-tonal-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Scopri le attività</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><!----></div></div></mci-card></div></div></div></section></mci-welcome><mci-join-us-on-sunday _ngcontent-ng-c2175440148 _nghost-ng-c4237377951 ngh="7"><mci-section _ngcontent-ng-c4237377951 title="Insieme nella fede" subtitle="Ogni domenica" backgroundcolor="var(--mat-sys-inverse-primary)" textcolor="var(--mat-sys-on-primary-fixed)" _nghost-ng-c2197175584 ngh="5"><section _ngcontent-ng-c2197175584 class="full-bleed width-container" style="--section-background-color: var(--mat-sys-inverse-primary); --section-color: var(--mat-sys-on-primary-fixed);"><div _ngcontent-ng-c2197175584 class="content section-content"><h2 _ngcontent-ng-c2197175584>Insieme nella fede</h2><div _ngcontent-ng-c2197175584 class="subtitle-container"><span _ngcontent-ng-c2197175584 class="italic italic-size-small">Ogni domenica</span></div><!----><div _ngcontent-ng-c4237377951 class="description-image-container"><div _ngcontent-ng-c4237377951 class="description"><p _ngcontent-ng-c4237377951 class="size-default"> La celebrazione eucaristica ci riunisce come comunità e ci accompagna nella vita di ogni giorno. Attraverso la preghiera e i sacramenti, custodiamo la nostra fede, rafforziamo i legami tra le famiglie e portiamo la ricchezza della nostra tradizione nella Chiesa che vive ad Augsburg. </p><p _ngcontent-ng-c4237377951 class="size-default"> Nessuno vi giudicherá. <b _ngcontent-ng-c4237377951>Le porte sono sempre aperte per tutti</b>. A chi si era allontanato e adesso sente il bisogno di riavvicinarsi come anche a chi si avvicina per la prima volta. </p></div><div _ngcontent-ng-c4237377951 class="image-container"><img _ngcontent-ng-c4237377951 src="https://images.pexels.com/photos/10325963/pexels-photo-10325963.jpeg" alt="mass"></div></div><div _ngcontent-ng-c4237377951 class="invitation"><div _ngcontent-ng-c4237377951 class="invitation-title"><h4 _ngcontent-ng-c4237377951>Ci trovi ogni domenica</h4></div><div _ngcontent-ng-c4237377951 class="size-default">Ore 11:00 · Santa Messa in italiano</div><div _ngcontent-ng-c4237377951 class="size-default">Chiesa di St. Canisius, Hochfeldstr. 63, Augsburg</div><br _ngcontent-ng-c4237377951><p _ngcontent-ng-c4237377951> Ogni terza domenica del mese celebriamo la Santa Messa anche a Lauingen, alle ore 16:00, nella Spitalkirche. </p><button _ngcontent-ng-c4237377951 matbutton="filled" class="mdc-button mat-mdc-button-base mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c4237377951 role="img" svgicon="arrow-forward" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="arrow-forward" ngh="2"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 -960 960 960" width="100%" fill="#e3e3e3" fit="" preserveAspectRatio="xMidYMid meet" focusable="false"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c4237377951>Scopri il calendario delle messe</span></span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div><div _ngcontent-ng-c4237377951 class="quote"><div _ngcontent-ng-c4237377951 class="italic italic-size-big">Non abbiate paura<br _ngcontent-ng-c4237377951>aprite le porte a Cristo</div></div></div></section></mci-section></mci-join-us-on-sunday><mci-our-values _ngcontent-ng-c2175440148 _nghost-ng-c3816506739 ngh="8"><mci-section _ngcontent-ng-c3816506739 title="La Nostra Missione" subtitle="Una fede da condividere" backgroundcolor="transparent" textcolor="var(--mat-sys-secondary)" _nghost-ng-c2197175584 ngh="5"><section _ngcontent-ng-c2197175584 class="full-bleed width-container" style="--section-background-color: transparent; --section-color: var(--mat-sys-secondary);"><div _ngcontent-ng-c2197175584 class="content section-content"><h2 _ngcontent-ng-c2197175584>La Nostra Missione</h2><div _ngcontent-ng-c2197175584 class="subtitle-container"><span _ngcontent-ng-c2197175584 class="italic italic-size-small">Una fede da condividere</span></div><!----><div _ngcontent-ng-c3816506739 class="values-grid"><div _ngcontent-ng-c3816506739 class="value-container"><h2 _ngcontent-ng-c3816506739>01</h2><h4 _ngcontent-ng-c3816506739>La fede ci guida</h4><p _ngcontent-ng-c3816506739 class="size-default message"> Annunciamo il Vangelo e accompagniamo le persone nel loro cammino di fede attraverso la preghiera, la catechesi e la vita sacramentale. </p></div><div _ngcontent-ng-c3816506739 class="value-container"><h2 _ngcontent-ng-c3816506739>02</h2><h4 _ngcontent-ng-c3816506739>Comunità che accoglie</h4><p _ngcontent-ng-c3816506739 class="size-default message"> Accogliamo ogni persona con spirito fraterno, creando spazi di incontro, ascolto e condivisione per famiglie, giovani e anziani. </p></div><div _ngcontent-ng-c3816506739 class="value-container"><h2 _ngcontent-ng-c3816506739>03</h2><h4 _ngcontent-ng-c3816506739>Le nostre radici</h4><p _ngcontent-ng-c3816506739 class="size-default message"> Valorizziamo la cultura, la lingua e le tradizioni italiane come dono da custodire e condividere all'interno della società in cui viviamo. </p></div><div _ngcontent-ng-c3816506739 class="value-container"><h2 _ngcontent-ng-c3816506739>04</h2><h4 _ngcontent-ng-c3816506739>Servire con amore</h4><p _ngcontent-ng-c3816506739 class="size-default message"> Collaboriamo con le Chiese locali, le istituzioni e le realtà del territorio per rispondere ai bisogni delle persone e promuovere il bene comune. </p></div><div _ngcontent-ng-c3816506739 class="value-container"><h2 _ngcontent-ng-c3816506739>05</h2><h4 _ngcontent-ng-c3816506739>Crescere insieme</h4><p _ngcontent-ng-c3816506739 class="size-default message"> Aiutiamo gli emigrati a inserirsi nella vita sociale ed ecclesiale, nel rispetto della propria storia, della propria fede e dei propri valori. </p></div><div _ngcontent-ng-c3816506739 class="value-container"><h2 _ngcontent-ng-c3816506739>06</h2><h4 _ngcontent-ng-c3816506739>Costruire fraternità</h4><p _ngcontent-ng-c3816506739 class="size-default message"> Promuoviamo dialogo, comprensione reciproca e rispetto della dignità di ogni persona, contribuendo a una convivenza più giusta, solidale e pacifica. </p></div></div></div></section></mci-section></mci-our-values><mci-prayer _ngcontent-ng-c2175440148 _nghost-ng-c3444274038 ngh="2"><section _ngcontent-ng-c3444274038 class="full-bleed width-container"><div _ngcontent-ng-c3444274038 class="content"><span _ngcontent-ng-c3444274038 class="italic italic-size-big title">Preghiera per gli emigranti</span><div _ngcontent-ng-c3444274038 class="image-container"><div _ngcontent-ng-c3444274038 class="prayer-container"><p _ngcontent-ng-c3444274038> O Gesù, che fin dai primi giorni della vostra vita terrena doveste lasciare con Maria vostra tenera Madre e con Giuseppe, il luogo natio, e sopportare in Egitto le pene e i disagi dei poveri emigranti, volgete pietoso lo sguardo sui nostri fratelli costretti dal bisogno ad abbandonare la diletta patria . </p><p _ngcontent-ng-c3444274038> Lontani da tutto quello che a loro è più caro, in cerca di onesto lavoro, essi vivono fra disagi e talvolta fra pericoli per la loro vita e per la salvezza dell'anima. </p><p _ngcontent-ng-c3444274038> Deh! siate ad essi guida nell'incerto cammino, aiuto nella fatica, conforto nei dolori; conservateli nell'integrità della fede, nella santità dei costumi, nell'affetto ai figli, alle spose, ai genitori lontani, e fate che, dopo il duro pellegrinaggio di questa terra, tutti possiamo raggiungere la patria beata. Così sia. Pater, Ave, Gloria. </p></div><div _ngcontent-ng-c3444274038><img _ngcontent-ng-c3444274038 src="https://images.pexels.com/photos/5206842/pexels-photo-5206842.jpeg" alt="preghiera"></div></div></div></section></mci-prayer><mci-our-story _ngcontent-ng-c2175440148 _nghost-ng-c3390014412 ngh="9"><mci-section _ngcontent-ng-c3390014412 title="La Nostra Storia" subtitle="Oltre sessant'anni di presenza e comunità" backgroundcolor="transparent" textcolor="var(--mat-sys-primary)" _nghost-ng-c2197175584 ngh="5"><section _ngcontent-ng-c2197175584 class="full-bleed width-container" style="--section-background-color: transparent; --section-color: var(--mat-sys-primary);"><div _ngcontent-ng-c2197175584 class="content section-content"><h2 _ngcontent-ng-c2197175584>La Nostra Storia</h2><div _ngcontent-ng-c2197175584 class="subtitle-container"><span _ngcontent-ng-c2197175584 class="italic italic-size-small">Oltre sessant'anni di presenza e comunità</span></div><!----><div _ngcontent-ng-c3390014412 class="story-container"><div _ngcontent-ng-c3390014412 class="story-image" style="background-image: url(https://images.pexels.com/photos/31574916/pexels-photo-31574916.jpeg);"></div><div _ngcontent-ng-c3390014412 class="story-short"><p _ngcontent-ng-c3390014412> La Missione Cattolica Italiana di Augsburg accompagna la comunità italiana dal 1962, offrendo sostegno spirituale, accoglienza e un punto di riferimento per generazioni di emigrati e delle loro famiglie. </p><p _ngcontent-ng-c3390014412> Nata per rispondere alle esigenze religiose degli italiani giunti in Germania negli anni del dopoguerra, la Missione è cresciuta insieme alla comunità, diventando nel tempo un luogo di incontro, fede e integrazione. </p><p _ngcontent-ng-c3390014412> Dai primi sacerdoti inviati per assistere i lavoratori italiani fino alle attività pastorali e culturali di oggi, la nostra storia è fatta di persone, relazioni e servizio al Vangelo. Una presenza che continua a rinnovarsi, mantenendo vive le radici italiane e costruendo ponti con la Chiesa e la società di Augsburg. </p><button _ngcontent-ng-c3390014412 matbutton="filled" class="mdc-button mat-mdc-button-base mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3390014412 role="img" svgicon="arrow-forward" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="arrow-forward" ngh="2"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 -960 960 960" width="100%" fill="#e3e3e3" fit="" preserveAspectRatio="xMidYMid meet" focusable="false"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3390014412 matprefix>Scopri la storia completa della Missione</span></span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></div></div></section></mci-section></mci-our-story><mci-our-pastors _ngcontent-ng-c2175440148 _nghost-ng-c1601500529 ngh="8"><mci-section _ngcontent-ng-c1601500529 title="Il Nostro Parroco" subtitle="Padre Bruno Zuchowski" backgroundcolor="var(--mat-sys-on-tertiary-container)" textcolor="var(--mat-sys-on-tertiary)" _nghost-ng-c2197175584 ngh="5"><section _ngcontent-ng-c2197175584 class="full-bleed width-container" style="--section-background-color: var(--mat-sys-on-tertiary-container); --section-color: var(--mat-sys-on-tertiary);"><div _ngcontent-ng-c2197175584 class="content section-content"><h2 _ngcontent-ng-c2197175584>Il Nostro Parroco</h2><div _ngcontent-ng-c2197175584 class="subtitle-container"><span _ngcontent-ng-c2197175584 class="italic italic-size-small">Padre Bruno Zuchowski</span></div><!----><div _ngcontent-ng-c1601500529 class="priest-presentation"><img _ngcontent-ng-c1601500529 alt="Don Bruno" src="https://www.aclibaviera.altervista.org/MISSIONE.KE/Bruno.jpg"><div _ngcontent-ng-c1601500529 class="priest-letter"><mat-icon _ngcontent-ng-c1601500529 role="img" svgicon="quotes-end" class="mat-icon notranslate quotes-start mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="quotes-end" ngh="2"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1280.000000 842.000000" preserveAspectRatio="xMidYMid meet" fit="" focusable="false">
+<metadata>
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+<path d="M1970 8414 c-19 -2 -78 -9 -130 -15 -399 -45 -802 -220 -1120 -487
+-492 -412 -744 -949 -717 -1527 21 -440 169 -784 471 -1094 303 -310 628 -466
+1049 -503 276 -24 526 14 897 136 396 131 519 144 663 73 57 -28 92 -56 153
+-119 109 -114 163 -229 201 -432 25 -127 24 -567 -1 -746 -73 -530 -234 -959
+-510 -1353 -320 -459 -971 -979 -1911 -1527 -116 -67 -216 -127 -222 -132 -10
+-8 -13 -90 -13 -349 0 -187 2 -339 5 -339 17 0 501 166 620 213 1187 464 2085
+1176 2740 2172 475 723 728 1442 817 2320 19 196 16 704 -6 885 -83 685 -285
+1194 -670 1690 -104 135 -409 441 -551 555 -377 300 -754 476 -1185 551 -114
+20 -187 26 -345 29 -110 2 -216 1 -235 -1z"/>
+<path d="M9685 8410 c-320 -33 -652 -142 -902 -298 -246 -153 -490 -389 -656
+-635 -73 -108 -171 -318 -211 -448 -61 -203 -71 -276 -70 -539 0 -206 3 -248
+22 -340 76 -351 236 -636 504 -896 105 -102 161 -147 269 -217 298 -194 664
+-284 1000 -247 142 15 307 55 519 124 411 135 580 156 720 89 146 -68 259
+-218 309 -408 62 -235 77 -618 36 -930 -72 -552 -311 -1074 -706 -1545 -120
+-143 -386 -405 -539 -529 -348 -285 -774 -565 -1232 -811 l-177 -95 -1 -344
+c0 -323 1 -343 18 -336 9 3 73 26 142 50 1250 432 2229 1083 2916 1940 597
+746 974 1575 1099 2419 41 279 50 399 50 706 0 275 -7 381 -36 575 -105 706
+-401 1312 -889 1819 -493 512 -989 785 -1600 882 -115 18 -461 26 -585 14z"/>
+</g>
+</svg></mat-icon><p _ngcontent-ng-c1601500529>Cari Italiani,</p><p _ngcontent-ng-c1601500529> senza una lunga preparazione, inaspettatamente per me e per tutti, sono arrivato ad Augsburg per essere pastore per Voi e con Voi, per credere con Voi, per avere cura di Voi e gioire insieme al pensiero che Dio è l’amore che ci unisce. </p><p _ngcontent-ng-c1601500529> Noi siamo stati chiamati e scelti per muovere „la nave“ e per riprendere a bordo coloro i quali sono caduti in acqua. </p><p _ngcontent-ng-c1601500529> Il Santo Padre Benedetto XVI ha scritto nell’Enciclica “Dio è amore”: “L'amore del prossimo, radicato nell'amore di Dio, è anzitutto un compito per ogni singolo fedele, ma è anche un compito per l'intera comunità ecclesiale, e questo a tutti i suoi livelli: dalla comunità locale alla Chiesa particolare fino alla Chiesa universale nella sua globalità. Amore di Dio e amore del prossimo si fondono insieme: nel più piccolo incontriamo Gesù stesso e in Gesù incontriamo Dio. Per questo rimane compito della Chiesa interpretare sempre di nuovo questo collegamento tra lontananza e vicinanza in vista della vita pratica dei suoi membri.” </p><p _ngcontent-ng-c1601500529> Il messaggio centrale del Cristianesimo è: Dio ha interesse in te e nell’umanità e per questo Lui si impegna per te e per gli uomini. Noi non lo dobbiamo dimenticare. </p></div></div></div></section></mci-section></mci-our-pastors><mci-our-groups _ngcontent-ng-c2175440148 _nghost-ng-c2707461406 ngh="8"><mci-section _ngcontent-ng-c2707461406 title="Le Nostre Attivitá" subtitle="Occasioni per costruire legami autentici" backgroundcolor="transparent" textcolor="var(--mat-sys-tertiary)" _nghost-ng-c2197175584 ngh="5"><section _ngcontent-ng-c2197175584 class="full-bleed width-container" style="--section-background-color: transparent; --section-color: var(--mat-sys-tertiary);"><div _ngcontent-ng-c2197175584 class="content section-content"><h2 _ngcontent-ng-c2197175584>Le Nostre Attivitá</h2><div _ngcontent-ng-c2197175584 class="subtitle-container"><span _ngcontent-ng-c2197175584 class="italic italic-size-small">Occasioni per costruire legami autentici</span></div><!----><div _ngcontent-ng-c2707461406 class="groups-grid"><mci-card _ngcontent-ng-c2707461406 imgurl="https://images.pexels.com/photos/5887653/pexels-photo-5887653.jpeg" title="Giovani e famiglie" text="Uno spazio per dialogo, riflessione e fraternità. Incontri mensili, il sabato pomeriggio oppure la domenica dopo la Santa Messa. Contatta cat.franzese@gmail.com per informazioni" _nghost-ng-c555012062 ngh="10"><div _ngcontent-ng-c555012062 class="card" style="background-image: url(https://images.pexels.com/photos/5887653/pexels-photo-5887653.jpeg);"><div _ngcontent-ng-c555012062 class="card-content"><h4 _ngcontent-ng-c555012062 class="card-title">Giovani e famiglie</h4><p _ngcontent-ng-c555012062 class="card-text">Uno spazio per dialogo, riflessione e fraternità. Incontri mensili, il sabato pomeriggio oppure la domenica dopo la Santa Messa. Contatta cat.franzese@gmail.com per informazioni</p><!----></div></div></mci-card><mci-card _ngcontent-ng-c2707461406 imgurl="https://media.istockphoto.com/id/187092120/de/foto/dirigent-und-seniorschors%C3%A4nger.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=8jTztH7yK9mVK3RlpmClW81yeMyjZkCVpxeh4MHtDCA=" title="Il coro" text="Cantando rendiamo più vive le nostre celebrazioni. Per informazioni, spartiti e i file dei canti contatta Alexander (015233853381) o Silvia (0172 8847786)." _nghost-ng-c555012062 ngh="10"><div _ngcontent-ng-c555012062 class="card" style="background-image: url(https://media.istockphoto.com/id/187092120/de/foto/dirigent-und-seniorschors%C3%A4nger.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=8jTztH7yK9mVK3RlpmClW81yeMyjZkCVpxeh4MHtDCA=);"><div _ngcontent-ng-c555012062 class="card-content"><h4 _ngcontent-ng-c555012062 class="card-title">Il coro</h4><p _ngcontent-ng-c555012062 class="card-text">Cantando rendiamo più vive le nostre celebrazioni. Per informazioni, spartiti e i file dei canti contatta Alexander (015233853381) o Silvia (0172 8847786).</p><!----></div></div></mci-card><mci-card _ngcontent-ng-c2707461406 imgurl="https://images.pexels.com/photos/8422248/pexels-photo-8422248.jpeg" title="Pomeriggio insieme (gruppo bambini)" text="Giochi, attività creative e una preghiera in italiano: uno spazio per divertirsi, fare amicizia e crescere insieme." _nghost-ng-c555012062 ngh="10"><div _ngcontent-ng-c555012062 class="card" style="background-image: url(https://images.pexels.com/photos/8422248/pexels-photo-8422248.jpeg);"><div _ngcontent-ng-c555012062 class="card-content"><h4 _ngcontent-ng-c555012062 class="card-title">Pomeriggio insieme (gruppo bambini)</h4><p _ngcontent-ng-c555012062 class="card-text">Giochi, attività creative e una preghiera in italiano: uno spazio per divertirsi, fare amicizia e crescere insieme.</p><!----></div></div></mci-card><mci-card _ngcontent-ng-c2707461406 imgurl="https://images.pexels.com/photos/5709255/pexels-photo-5709255.jpeg" title="Noi e la nostra fede" text="Un luogo aperto a tutti per approfondire la fede, condividere esperienze e sostenerci nel cammino cristiano." _nghost-ng-c555012062 ngh="10"><div _ngcontent-ng-c555012062 class="card" style="background-image: url(https://images.pexels.com/photos/5709255/pexels-photo-5709255.jpeg);"><div _ngcontent-ng-c555012062 class="card-content"><h4 _ngcontent-ng-c555012062 class="card-title">Noi e la nostra fede</h4><p _ngcontent-ng-c555012062 class="card-text">Un luogo aperto a tutti per approfondire la fede, condividere esperienze e sostenerci nel cammino cristiano.</p><!----></div></div></mci-card></div></div></section></mci-section></mci-our-groups></div><mci-footer _ngcontent-ng-c2175440148 _nghost-ng-c1102651894 ngh="11"><footer _ngcontent-ng-c1102651894 class="full-bleed width-container"><div _ngcontent-ng-c1102651894 class="content footer-content"><a _ngcontent-ng-c1102651894 routerlink="/" style="grid-area: logo;" href="/" jsaction="click:;"><img _ngcontent-ng-c1102651894 alt="MCI logo" height="100" width="100" ngsrc="/images/logo.svg" priority="1" loading="eager" fetchpriority="high" decoding="sync" ng-img="true" src="/images/logo.svg"></a><div _ngcontent-ng-c1102651894 class="contacts" style="grid-area: contacts;"><h5 _ngcontent-ng-c1102651894>Contatti</h5><div _ngcontent-ng-c1102651894 class="info-box"><div _ngcontent-ng-c1102651894>Tel. 0821 513030</div><div _ngcontent-ng-c1102651894>Fax 0821 312718</div><div _ngcontent-ng-c1102651894>info@mci-augsburg.de</div></div></div><div _ngcontent-ng-c1102651894 class="location" style="grid-area: location;"><h5 _ngcontent-ng-c1102651894>Posizione</h5><div _ngcontent-ng-c1102651894 class="info-box"><div _ngcontent-ng-c1102651894>Kobelweg 1</div><div _ngcontent-ng-c1102651894>86156 Augsburg</div></div></div><div _ngcontent-ng-c1102651894 style="grid-area: connected;"><h3 _ngcontent-ng-c1102651894>Resta connesso</h3><div _ngcontent-ng-c1102651894 class="social-media"><a _ngcontent-ng-c1102651894 mat-icon-button href="https://www.facebook.com/profile.php?id=61583487631617" class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" mat-ripple-loader-centered ngh="1"><span class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"></span><mat-icon _ngcontent-ng-c1102651894 role="img" svgicon="facebook" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="facebook" ngh="2"><svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false"><defs id="defs2"/>
+  <path id="path1" d="M 20 0 C 9 0 0 9 0 20 C -2.3684758e-15 29.9 7.1992188 38.100781 16.699219 39.800781 L 16.820312 39.701172 C 16.813829 39.7 16.807265 39.700398 16.800781 39.699219 L 16.800781 25.599609 L 11.800781 25.599609 L 11.800781 20 L 16.800781 20 L 16.800781 15.599609 C 16.800781 10.599609 19.999609 7.8007812 24.599609 7.8007812 C 25.999609 7.8007812 27.6 7.9992187 29 8.1992188 L 29 13.300781 L 26.400391 13.300781 C 24.000391 13.300781 23.400391 14.499609 23.400391 16.099609 L 23.400391 20 L 28.699219 20 L 27.800781 25.599609 L 23.400391 25.599609 L 23.400391 39.699219 C 23.336643 39.710809 23.272732 39.713691 23.208984 39.724609 L 23.300781 39.800781 C 32.800781 38.100781 40 29.9 40 20 C 40 9 31 0 20 0 z " fill="currentColor"/>
+</svg></mat-icon><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c1102651894 mat-icon-button routerlink="/" class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" mat-ripple-loader-centered href="/" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"></span><mat-icon _ngcontent-ng-c1102651894 role="img" svgicon="instagram" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="instagram" ngh="2"><svg viewBox="0 0 96 96" version="1.1" id="svg9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+  <defs id="defs7">
+    <linearGradient id="b">
+      <stop offset="0" stop-color="#3771c8" id="stop1"/>
+      <stop stop-color="#3771c8" offset=".128" id="stop2"/>
+      <stop offset="1" stop-color="#60f" stop-opacity="0" id="stop3"/>
+    </linearGradient>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#fd5" id="stop4"/>
+      <stop offset=".1" stop-color="#fd5" id="stop5"/>
+      <stop offset=".5" stop-color="#ff543e" id="stop6"/>
+      <stop offset="1" stop-color="#c837ab" id="stop7"/>
+    </linearGradient>
+    <radialGradient id="c" cx="158.429" cy="578.08801" r="65" xlink:href="#a" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-1.98198,1.8439,0,-1230.0539,359.90723)" fx="158.429" fy="578.08801"/>
+    <radialGradient id="d" cx="147.694" cy="473.45499" r="65" xlink:href="#b" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.17394,0.86872,-3.5818,0.71718,1648.348,-458.493)" fx="147.694" fy="473.45499"/>
+  </defs>
+  <path fill="currentColor" d="M 48.004,0 C 34.968,0 33.332,0.057 28.212,0.29 c -5.11,0.234 -8.598,1.043 -11.65,2.23 -3.157,1.226 -5.835,2.866 -8.503,5.535 -2.67,2.668 -4.31,5.346 -5.54,8.502 -1.19,3.053 -2,6.542 -2.23,11.65 C 0.06,33.327 0,34.964 0,48 c 0,13.036 0.058,14.667 0.29,19.787 0.235,5.11 1.044,8.598 2.23,11.65 1.227,3.157 2.867,5.835 5.536,8.503 2.667,2.67 5.345,4.314 8.5,5.54 3.054,1.187 6.543,1.996 11.652,2.23 5.12,0.233 6.755,0.29 19.79,0.29 13.037,0 14.668,-0.057 19.788,-0.29 5.11,-0.234 8.602,-1.043 11.656,-2.23 3.156,-1.226 5.83,-2.87 8.497,-5.54 2.67,-2.668 4.31,-5.346 5.54,-8.502 1.18,-3.053 1.99,-6.542 2.23,-11.65 0.23,-5.12 0.29,-6.752 0.29,-19.788 0,-13.036 -0.06,-14.672 -0.29,-19.792 -0.24,-5.11 -1.05,-8.598 -2.23,-11.65 -1.23,-3.157 -2.87,-5.835 -5.54,-8.503 -2.67,-2.67 -5.34,-4.31 -8.5,-5.535 C 76.379,1.333 72.889,0.524 67.779,0.29 62.659,0.057 61.029,0 47.989,0 Z m -4.306,8.65 c 1.278,-0.002 2.704,0 4.306,0 12.816,0 14.335,0.046 19.396,0.276 4.68,0.214 7.22,0.996 8.912,1.653 2.24,0.87 3.837,1.91 5.516,3.59 1.68,1.68 2.72,3.28 3.592,5.52 0.657,1.69 1.44,4.23 1.653,8.91 0.23,5.06 0.28,6.58 0.28,19.39 0,12.81 -0.05,14.33 -0.28,19.39 -0.214,4.68 -0.996,7.22 -1.653,8.91 -0.87,2.24 -1.912,3.835 -3.592,5.514 -1.68,1.68 -3.275,2.72 -5.516,3.59 -1.69,0.66 -4.232,1.44 -8.912,1.654 -5.06,0.23 -6.58,0.28 -19.396,0.28 -12.817,0 -14.336,-0.05 -19.396,-0.28 -4.68,-0.216 -7.22,-0.998 -8.913,-1.655 -2.24,-0.87 -3.84,-1.91 -5.52,-3.59 -1.68,-1.68 -2.72,-3.276 -3.592,-5.517 -0.657,-1.69 -1.44,-4.23 -1.653,-8.91 -0.23,-5.06 -0.276,-6.58 -0.276,-19.398 0,-12.818 0.046,-14.33 0.276,-19.39 0.214,-4.68 0.996,-7.22 1.653,-8.912 0.87,-2.24 1.912,-3.84 3.592,-5.52 1.68,-1.68 3.28,-2.72 5.52,-3.592 1.692,-0.66 4.233,-1.44 8.913,-1.655 4.428,-0.2 6.144,-0.26 15.09,-0.27 z m 29.928,7.97 c -3.18,0 -5.76,2.577 -5.76,5.758 0,3.18 2.58,5.76 5.76,5.76 3.18,0 5.76,-2.58 5.76,-5.76 0,-3.18 -2.58,-5.76 -5.76,-5.76 z m -25.622,6.73 c -13.613,0 -24.65,11.037 -24.65,24.65 0,13.613 11.037,24.645 24.65,24.645 C 61.617,72.645 72.65,61.613 72.65,48 72.65,34.387 61.616,23.35 48.003,23.35 Z m 0,8.65 c 8.836,0 16,7.163 16,16 0,8.836 -7.164,16 -16,16 -8.837,0 -16,-7.164 -16,-16 0,-8.837 7.163,-16 16,-16 z" id="path9"/>
+</svg></mat-icon><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a></div></div><div _ngcontent-ng-c1102651894 style="grid-area: buttons;"><button _ngcontent-ng-c1102651894 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Home</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c1102651894 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Pfarramt</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c1102651894 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Contatti</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c1102651894 mat-button class="mdc-button mat-mdc-button-base mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="0"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Notizie</span><!----><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></div></footer></mci-footer></mci-app><!----></mci-root>
+<link rel="modulepreload" href="chunk-Y5J4PHOY.js"><script src="main-OJGPPN7T.js" type="module"></script>
+<link rel="modulepreload" href="chunk-T33GNLUS.js">
+
+
+<script id="ng-state" type="application/json">{"a448fc50057948aa7ddcb071ddac5718bc67ed00df990b87ddcdc41c50c5e79a":{"b":"\u003Csvg\n  version=\"1.1\"\n  id=\"Layer_1\"\n  x=\"0px\"\n  y=\"0px\"\n  viewBox=\"0 0 40 40\"\n  style=\"enable-background:new 0 0 40 40;\"\n  xml:space=\"preserve\"\n  xmlns=\"http:\u002F\u002Fwww.w3.org\u002F2000\u002Fsvg\">\u003Cdefs\n   id=\"defs2\" \u002F>\n  \u003Cpath\n    id=\"path1\"\n    d=\"M 20 0 C 9 0 0 9 0 20 C -2.3684758e-15 29.9 7.1992188 38.100781 16.699219 39.800781 L 16.820312 39.701172 C 16.813829 39.7 16.807265 39.700398 16.800781 39.699219 L 16.800781 25.599609 L 11.800781 25.599609 L 11.800781 20 L 16.800781 20 L 16.800781 15.599609 C 16.800781 10.599609 19.999609 7.8007812 24.599609 7.8007812 C 25.999609 7.8007812 27.6 7.9992187 29 8.1992188 L 29 13.300781 L 26.400391 13.300781 C 24.000391 13.300781 23.400391 14.499609 23.400391 16.099609 L 23.400391 20 L 28.699219 20 L 27.800781 25.599609 L 23.400391 25.599609 L 23.400391 39.699219 C 23.336643 39.710809 23.272732 39.713691 23.208984 39.724609 L 23.300781 39.800781 C 32.800781 38.100781 40 29.9 40 20 C 40 9 31 0 20 0 z \"\n    fill=\"currentColor\" \u002F>\n\u003C\u002Fsvg>\n","h":{},"s":200,"st":"OK","u":"\u002Fimages\u002Ffacebook.svg","rt":"text"},"e13dc93f0ea4ce2d10e08850c4f929a9feea52c49a6fb577a48ac20b05d988e5":{"b":"\u003Csvg xmlns=\"http:\u002F\u002Fwww.w3.org\u002F2000\u002Fsvg\" height=\"24px\" viewBox=\"0 -960 960 960\" width=\"24px\" fill=\"#e3e3e3\">\u003Cpath d=\"M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z\"\u002F>\u003C\u002Fsvg>","h":{},"s":200,"st":"OK","u":"\u002Fimages\u002Farrow-forward.svg","rt":"text"},"c2bced75aa6837c2d7380775c28323be9f8ee03bb4489d3b06f8a413176ca58b":{"b":"\u003Csvg\n  viewBox=\"0 0 96 96\"\n  version=\"1.1\"\n  id=\"svg9\"\n  xmlns:xlink=\"http:\u002F\u002Fwww.w3.org\u002F1999\u002Fxlink\"\n  xmlns=\"http:\u002F\u002Fwww.w3.org\u002F2000\u002Fsvg\">\n  \u003Cdefs\n    id=\"defs7\">\n    \u003ClinearGradient\n      id=\"b\">\n      \u003Cstop\n        offset=\"0\"\n        stop-color=\"#3771c8\"\n        id=\"stop1\" \u002F>\n      \u003Cstop\n        stop-color=\"#3771c8\"\n        offset=\".128\"\n        id=\"stop2\" \u002F>\n      \u003Cstop\n        offset=\"1\"\n        stop-color=\"#60f\"\n        stop-opacity=\"0\"\n        id=\"stop3\" \u002F>\n    \u003C\u002FlinearGradient>\n    \u003ClinearGradient\n      id=\"a\">\n      \u003Cstop\n        offset=\"0\"\n        stop-color=\"#fd5\"\n        id=\"stop4\" \u002F>\n      \u003Cstop\n        offset=\".1\"\n        stop-color=\"#fd5\"\n        id=\"stop5\" \u002F>\n      \u003Cstop\n        offset=\".5\"\n        stop-color=\"#ff543e\"\n        id=\"stop6\" \u002F>\n      \u003Cstop\n        offset=\"1\"\n        stop-color=\"#c837ab\"\n        id=\"stop7\" \u002F>\n    \u003C\u002FlinearGradient>\n    \u003CradialGradient\n      id=\"c\"\n      cx=\"158.429\"\n      cy=\"578.08801\"\n      r=\"65\"\n      xlink:href=\"#a\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"matrix(0,-1.98198,1.8439,0,-1230.0539,359.90723)\"\n      fx=\"158.429\"\n      fy=\"578.08801\" \u002F>\n    \u003CradialGradient\n      id=\"d\"\n      cx=\"147.694\"\n      cy=\"473.45499\"\n      r=\"65\"\n      xlink:href=\"#b\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"matrix(0.17394,0.86872,-3.5818,0.71718,1648.348,-458.493)\"\n      fx=\"147.694\"\n      fy=\"473.45499\" \u002F>\n  \u003C\u002Fdefs>\n  \u003Cpath\n    fill=\"currentColor\"\n    d=\"M 48.004,0 C 34.968,0 33.332,0.057 28.212,0.29 c -5.11,0.234 -8.598,1.043 -11.65,2.23 -3.157,1.226 -5.835,2.866 -8.503,5.535 -2.67,2.668 -4.31,5.346 -5.54,8.502 -1.19,3.053 -2,6.542 -2.23,11.65 C 0.06,33.327 0,34.964 0,48 c 0,13.036 0.058,14.667 0.29,19.787 0.235,5.11 1.044,8.598 2.23,11.65 1.227,3.157 2.867,5.835 5.536,8.503 2.667,2.67 5.345,4.314 8.5,5.54 3.054,1.187 6.543,1.996 11.652,2.23 5.12,0.233 6.755,0.29 19.79,0.29 13.037,0 14.668,-0.057 19.788,-0.29 5.11,-0.234 8.602,-1.043 11.656,-2.23 3.156,-1.226 5.83,-2.87 8.497,-5.54 2.67,-2.668 4.31,-5.346 5.54,-8.502 1.18,-3.053 1.99,-6.542 2.23,-11.65 0.23,-5.12 0.29,-6.752 0.29,-19.788 0,-13.036 -0.06,-14.672 -0.29,-19.792 -0.24,-5.11 -1.05,-8.598 -2.23,-11.65 -1.23,-3.157 -2.87,-5.835 -5.54,-8.503 -2.67,-2.67 -5.34,-4.31 -8.5,-5.535 C 76.379,1.333 72.889,0.524 67.779,0.29 62.659,0.057 61.029,0 47.989,0 Z m -4.306,8.65 c 1.278,-0.002 2.704,0 4.306,0 12.816,0 14.335,0.046 19.396,0.276 4.68,0.214 7.22,0.996 8.912,1.653 2.24,0.87 3.837,1.91 5.516,3.59 1.68,1.68 2.72,3.28 3.592,5.52 0.657,1.69 1.44,4.23 1.653,8.91 0.23,5.06 0.28,6.58 0.28,19.39 0,12.81 -0.05,14.33 -0.28,19.39 -0.214,4.68 -0.996,7.22 -1.653,8.91 -0.87,2.24 -1.912,3.835 -3.592,5.514 -1.68,1.68 -3.275,2.72 -5.516,3.59 -1.69,0.66 -4.232,1.44 -8.912,1.654 -5.06,0.23 -6.58,0.28 -19.396,0.28 -12.817,0 -14.336,-0.05 -19.396,-0.28 -4.68,-0.216 -7.22,-0.998 -8.913,-1.655 -2.24,-0.87 -3.84,-1.91 -5.52,-3.59 -1.68,-1.68 -2.72,-3.276 -3.592,-5.517 -0.657,-1.69 -1.44,-4.23 -1.653,-8.91 -0.23,-5.06 -0.276,-6.58 -0.276,-19.398 0,-12.818 0.046,-14.33 0.276,-19.39 0.214,-4.68 0.996,-7.22 1.653,-8.912 0.87,-2.24 1.912,-3.84 3.592,-5.52 1.68,-1.68 3.28,-2.72 5.52,-3.592 1.692,-0.66 4.233,-1.44 8.913,-1.655 4.428,-0.2 6.144,-0.26 15.09,-0.27 z m 29.928,7.97 c -3.18,0 -5.76,2.577 -5.76,5.758 0,3.18 2.58,5.76 5.76,5.76 3.18,0 5.76,-2.58 5.76,-5.76 0,-3.18 -2.58,-5.76 -5.76,-5.76 z m -25.622,6.73 c -13.613,0 -24.65,11.037 -24.65,24.65 0,13.613 11.037,24.645 24.65,24.645 C 61.617,72.645 72.65,61.613 72.65,48 72.65,34.387 61.616,23.35 48.003,23.35 Z m 0,8.65 c 8.836,0 16,7.163 16,16 0,8.836 -7.164,16 -16,16 -8.837,0 -16,-7.164 -16,-16 0,-8.837 7.163,-16 16,-16 z\"\n    id=\"path9\" \u002F>\n\u003C\u002Fsvg>\n","h":{},"s":200,"st":"OK","u":"\u002Fimages\u002Finstagram.svg","rt":"text"},"ac41661eba420e45e9fcef4cea8000e7165efbca8cfdada7f6245ec57c6c9aa7":{"b":"\u003C?xml version=\"1.0\" standalone=\"no\"?>\n\u003C!DOCTYPE svg PUBLIC \"-\u002F\u002FW3C\u002F\u002FDTD SVG 20010904\u002F\u002FEN\"\n \"http:\u002F\u002Fwww.w3.org\u002FTR\u002F2001\u002FREC-SVG-20010904\u002FDTD\u002Fsvg10.dtd\">\n\u003Csvg version=\"1.0\" xmlns=\"http:\u002F\u002Fwww.w3.org\u002F2000\u002Fsvg\"\n width=\"1280.000000pt\" height=\"842.000000pt\" viewBox=\"0 0 1280.000000 842.000000\"\n preserveAspectRatio=\"xMidYMid meet\">\n\u003Cmetadata>\nCreated by potrace 1.15, written by Peter Selinger 2001-2017\n\u003C\u002Fmetadata>\n\u003Cg transform=\"translate(0.000000,842.000000) scale(0.100000,-0.100000)\"\nfill=\"#000000\" stroke=\"none\">\n\u003Cpath d=\"M1970 8414 c-19 -2 -78 -9 -130 -15 -399 -45 -802 -220 -1120 -487\n-492 -412 -744 -949 -717 -1527 21 -440 169 -784 471 -1094 303 -310 628 -466\n1049 -503 276 -24 526 14 897 136 396 131 519 144 663 73 57 -28 92 -56 153\n-119 109 -114 163 -229 201 -432 25 -127 24 -567 -1 -746 -73 -530 -234 -959\n-510 -1353 -320 -459 -971 -979 -1911 -1527 -116 -67 -216 -127 -222 -132 -10\n-8 -13 -90 -13 -349 0 -187 2 -339 5 -339 17 0 501 166 620 213 1187 464 2085\n1176 2740 2172 475 723 728 1442 817 2320 19 196 16 704 -6 885 -83 685 -285\n1194 -670 1690 -104 135 -409 441 -551 555 -377 300 -754 476 -1185 551 -114\n20 -187 26 -345 29 -110 2 -216 1 -235 -1z\"\u002F>\n\u003Cpath d=\"M9685 8410 c-320 -33 -652 -142 -902 -298 -246 -153 -490 -389 -656\n-635 -73 -108 -171 -318 -211 -448 -61 -203 -71 -276 -70 -539 0 -206 3 -248\n22 -340 76 -351 236 -636 504 -896 105 -102 161 -147 269 -217 298 -194 664\n-284 1000 -247 142 15 307 55 519 124 411 135 580 156 720 89 146 -68 259\n-218 309 -408 62 -235 77 -618 36 -930 -72 -552 -311 -1074 -706 -1545 -120\n-143 -386 -405 -539 -529 -348 -285 -774 -565 -1232 -811 l-177 -95 -1 -344\nc0 -323 1 -343 18 -336 9 3 73 26 142 50 1250 432 2229 1083 2916 1940 597\n746 974 1575 1099 2419 41 279 50 399 50 706 0 275 -7 381 -36 575 -105 706\n-401 1312 -889 1819 -493 512 -989 785 -1600 882 -115 18 -461 26 -585 14z\"\u002F>\n\u003C\u002Fg>\n\u003C\u002Fsvg>\n","h":{},"s":200,"st":"OK","u":"\u002Fimages\u002Fquotes-end.svg","rt":"text"},"__nghData__":[{"n":{"2":"hfn","5":"hfn2"},"t":{"5":"t0"},"c":{"5":[]}},{"n":{"2":"hfn2"},"t":{"2":"t1"},"c":{"2":[]}},{},{"n":{"7":"6fnf","9":"8fnf","11":"10fnf","13":"12fnf","15":"14fnf","17":"16fnf","19":"18fnf","21":"20fnf","23":"22fnf","25":"24fn","27":"26fn"}},{"t":{"6":"t2"},"c":{"6":[{"i":"t2","r":1,"n":{"1":"0fnf"}}]}},{"t":{"4":"t3"},"c":{"4":[{"i":"t3","r":1}]}},{"n":{"2":"hfn2","5":"hfn3"},"t":{"5":"t0"},"c":{"5":[]}},{"n":{"1":"0f3n3","24":"23fn2f","26":"23fn"}},{"n":{"1":"0f3n3"}},{"n":{"1":"0f3n3","11":"10fn2f","13":"10fn"}},{"t":{"6":"t2"},"c":{"6":[]}},{"n":{"27":"26fn","29":"28fn","32":"31fnf","34":"33fnf","36":"35fnf","38":"37fnf"}},{"c":{"0":[{"i":"c2175440148","r":1}]}}]}</script></body></html>

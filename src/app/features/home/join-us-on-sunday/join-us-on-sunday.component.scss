@@ -2,6 +2,9 @@
 @use '../../../../styles/_theme-colors' as mci;
 
 :host {
+  display: block;
+  overflow: hidden; // needed for italic overflowing on narrower screens
+
   .italic {
     color: var(--mat-sys-on-primary-fixed);
     opacity: 0.8;
@@ -11,25 +14,31 @@
     text-align: center;
     max-width: 1000px;
     margin: auto;
-    padding-bottom: 40px;
+    padding-block: 40px;
   }
 
-  .image-container {
-    display: flex;
+  .description-image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 40px;
 
-    img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
+    .image-container {
+      align-self: center;
+      justify-self: center;
+
+      img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
     }
   }
 
   .invitation {
     text-align: center;
-    width: 1000px;
+    max-width: 1000px;
     margin: 60px auto 0 auto;
 
     .invitation-title {
@@ -45,11 +54,17 @@
 
     .italic {
       text-align: right;
-      margin-right: -44px;
+      margin-right: -20px;
+    }
+  }
 
-      &:first-of-type {
-        margin-bottom: -50px;
-      }
+  @media (max-width: 700px) {
+    .description-image-container {
+      grid-template-columns: 1fr;
+    }
+
+    .description {
+      padding-block: 20px 0;
     }
   }
 }

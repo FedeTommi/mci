@@ -2,4 +2,7 @@
 @use '../../../../styles/_theme-colors' as mci;
 
 :host {
+  .full-bleed::ng-deep .section-content {
+    margin-top: 60px;
+  }
 }

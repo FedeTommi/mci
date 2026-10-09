@@ -7,6 +7,7 @@
 
   .priest-presentation {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 60px;
@@ -31,6 +32,12 @@
       top: 0;
       right: 0;
       transform: translateY(-60%) translateX(30%);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .priest-presentation {
+      flex-direction: column;
     }
   }
 }

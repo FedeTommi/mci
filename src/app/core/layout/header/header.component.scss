@@ -27,6 +27,30 @@
   }
 
   a mat-icon {
-    color: var(--mat-sys-primary);
+    display: revert;
+    color: var(--mat-sys-on-surface);
+  }
+
+  .navigation {
+    padding-right: 20px;
+    // display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+
+    button {
+      color: var(--mat-sys-on-surface);
+    }
+  }
+
+  @media (max-width: 950px) {
+    .navigation {
+      display: none;
+    }
+
+    a mat-icon {
+      display: none;
+    }
   }
 }

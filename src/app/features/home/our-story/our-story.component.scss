@@ -21,4 +21,18 @@
   .story-short {
     max-width: 50%;
   }
+
+  @media (max-width: 700px) {
+    .story-container {
+      flex-direction: column;
+    }
+
+    .story-short {
+      max-width: 100%;
+    }
+
+    .story-image {
+      max-width: 100%;
+    }
+  }
 }

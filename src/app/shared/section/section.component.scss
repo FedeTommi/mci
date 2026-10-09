@@ -1,17 +1,14 @@
 :host {
   section {
     background-color: var(--section-background-color);
-    // margin-inline: -2400px; // TODO find a better solution for full-bleed
-    // padding-inline: 2400px;
     color: var(--section-color);
     min-height: 640px;
 
     .section-content {
-      margin-top: 60px;
+      // margin-top: 60px;
     }
 
     .subtitle-container {
-      // height: 100%;
       transform: translateY(-50%);
       padding-left: 40px;
       opacity: 0.6;
@@ -20,5 +17,13 @@
         color: var(--section-color);
       }
     }
+  }
+
+  @media (max-width: 700px) {
+    section .subtitle-container {
+      transform: translateY(0);
+      padding-bottom: 40px;
+    }
+
   }
 }

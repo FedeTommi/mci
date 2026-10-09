@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { HeroComponent } from '../../../features/home/hero/hero.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -9,10 +8,10 @@ import { OurStoryComponent } from '../../../features/home/our-story/our-story.co
 import { OurValuesComponent } from '../../../features/home/our-values/our-values.component';
 import { PrayerComponent } from '../../../features/home/prayer/prayer.component';
 import { JoinUsOnSundayComponent } from '../../../features/home/join-us-on-sunday/join-us-on-sunday.component';
+import { OurGroupsComponent } from '../../../features/home/our-groups/our-groups.component';
 
 @Component({
-  imports:         [
-    RouterOutlet,
+  imports: [
     HeaderComponent,
     HeroComponent,
     FooterComponent,
@@ -22,6 +21,7 @@ import { JoinUsOnSundayComponent } from '../../../features/home/join-us-on-sunda
     OurValuesComponent,
     PrayerComponent,
     JoinUsOnSundayComponent,
+    OurGroupsComponent,
   ],
   selector:        'mci-app',
   templateUrl:     'app.component.html',

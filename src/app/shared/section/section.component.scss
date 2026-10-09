@@ -15,7 +15,10 @@
       transform: translateY(-50%);
       padding-left: 40px;
       opacity: 0.6;
-      color: var(--section-color);
+
+      .italic {
+        color: var(--section-color);
+      }
     }
   }
 }

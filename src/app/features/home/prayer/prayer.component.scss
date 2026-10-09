@@ -5,9 +5,20 @@
   background-color: map.get(mci.$secondary-palette, 20);
 
   section {
-
     .title {
       color: white;
+    }
+
+    .image-container {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        width: auto;
+        height: 500px;
+      }
     }
 
     .prayer-container {

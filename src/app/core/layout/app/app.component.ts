@@ -8,6 +8,7 @@ import { OurPastorsComponent } from '../../../features/home/our-pastors/our-past
 import { OurStoryComponent } from '../../../features/home/our-story/our-story.component';
 import { OurValuesComponent } from '../../../features/home/our-values/our-values.component';
 import { PrayerComponent } from '../../../features/home/prayer/prayer.component';
+import { JoinUsOnSundayComponent } from '../../../features/home/join-us-on-sunday/join-us-on-sunday.component';
 
 @Component({
   imports:         [
@@ -20,6 +21,7 @@ import { PrayerComponent } from '../../../features/home/prayer/prayer.component'
     OurStoryComponent,
     OurValuesComponent,
     PrayerComponent,
+    JoinUsOnSundayComponent,
   ],
   selector:        'mci-app',
   templateUrl:     'app.component.html',

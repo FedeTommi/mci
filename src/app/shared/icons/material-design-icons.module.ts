@@ -18,5 +18,6 @@ export class MaterialDesignIconsModule {
 
     matIconRegistry.addSvgIcon('facebook', domSanitizer.bypassSecurityTrustResourceUrl('/images/facebook.svg'));
     matIconRegistry.addSvgIcon('instagram', domSanitizer.bypassSecurityTrustResourceUrl('/images/instagram.svg'));
+    matIconRegistry.addSvgIcon('quotes-end', domSanitizer.bypassSecurityTrustResourceUrl('/images/quotes-end.svg'));
   }
 }

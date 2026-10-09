@@ -1,16 +1,16 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { SectionComponent } from '../../../shared/section/section.component';
-import { MatIcon } from '@angular/material/icon';
+import { MatButton } from '@angular/material/button';
 
 @Component({
   imports:         [
     SectionComponent,
-    MatIcon
+    MatButton,
   ],
-  selector:        'mci-our-pastors',
-  templateUrl:     'our-pastors.component.html',
-  styleUrl:        'our-pastors.component.scss',
+  selector:        'mci-join-us-on-sunday',
+  templateUrl:     'join-us-on-sunday.component.html',
+  styleUrl:        'join-us-on-sunday.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class OurPastorsComponent {
+export class JoinUsOnSundayComponent {
 }

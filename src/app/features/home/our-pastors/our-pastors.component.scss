@@ -2,4 +2,35 @@
 @use '../../../../styles/_theme-colors' as mci;
 
 :host {
+  display: block;
+  overflow: hidden; // needed for quotation mark overflowing on narrower screens
+
+  .priest-presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding-bottom: 60px;
+
+    .priest-letter {
+      flex: 1;
+      position: relative;
+    }
+
+    img {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .quotes-start {
+      --size: 250px;
+      height: var(--size);
+      width: var(--size);
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(-60%) translateX(30%);
+    }
+  }
 }

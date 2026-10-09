@@ -25,5 +25,9 @@
       color: map.get(mci.$primary-palette, 20);
       // color: var(--mat-sys-on-background);
     }
+
+    .info-box {
+      margin-top: 24px;
+    }
   }
 }

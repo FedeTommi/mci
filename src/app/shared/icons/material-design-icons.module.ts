@@ -16,9 +16,9 @@ export class MaterialDesignIconsModule {
     const matIconRegistry = inject(MatIconRegistry);
     const domSanitizer = inject(DomSanitizer);
 
-    matIconRegistry.addSvgIcon('facebook', domSanitizer.bypassSecurityTrustResourceUrl('/images/facebook.svg'));
-    matIconRegistry.addSvgIcon('instagram', domSanitizer.bypassSecurityTrustResourceUrl('/images/instagram.svg'));
-    matIconRegistry.addSvgIcon('quotes-end', domSanitizer.bypassSecurityTrustResourceUrl('/images/quotes-end.svg'));
-    matIconRegistry.addSvgIcon('arrow-forward', domSanitizer.bypassSecurityTrustResourceUrl('/images/arrow-forward.svg'));
+    matIconRegistry.addSvgIcon('facebook', domSanitizer.bypassSecurityTrustResourceUrl('images/facebook.svg'));
+    matIconRegistry.addSvgIcon('instagram', domSanitizer.bypassSecurityTrustResourceUrl('images/instagram.svg'));
+    matIconRegistry.addSvgIcon('quotes-end', domSanitizer.bypassSecurityTrustResourceUrl('images/quotes-end.svg'));
+    matIconRegistry.addSvgIcon('arrow-forward', domSanitizer.bypassSecurityTrustResourceUrl('images/arrow-forward.svg'));
   }
 }

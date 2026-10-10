@@ -37,8 +37,7 @@
               "src/styles/variables.scss",
               "src/styles/fonts/font.scss"
             ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
+            "outputMode": "static",
             "security": {
               "allowedHosts": []
             },

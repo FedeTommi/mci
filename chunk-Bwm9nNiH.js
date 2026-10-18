@@ -1,2 +1,0 @@
-import {g}from'./chunk-Ce2GXtCD.js';import {n as nI,$ as $o,S as SD,o as oc}from'./main-U73R2VBJ.js';var i=class a{static \u0275fac=function(e){return new(e||a)};static \u0275cmp=nI({type:a,selectors:[["mci-contacts"]],decls:5,vars:0,consts:[["imageUrl","https://images.pexels.com/photos/7219090/pexels-photo-7219090.jpeg"],[1,"height-container"]],template:function(e,p){e&1&&($o(0,"mci-hero",0)(1,"h1"),SD(2,"Contatti"),oc()(),$o(3,"div",1),SD(4,` Contacts page
-`),oc());},dependencies:[g],encapsulation:2})};export{i as ContactsComponent};

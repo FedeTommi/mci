@@ -1,2 +1,0 @@
-import {g}from'./chunk-Ce2GXtCD.js';import {n as nI,$ as $o,S as SD,o as oc,b as bp}from'./main-U73R2VBJ.js';var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=nI({type:t,selectors:[["mci-parish-office"]],decls:4,vars:0,consts:[["imageUrl","https://images.pexels.com/photos/8296972/pexels-photo-8296972.jpeg"],[1,"height-container"]],template:function(e,f){e&1&&($o(0,"mci-hero",0)(1,"h1"),SD(2,"Ufficio parrocchiale"),oc()(),bp(3,"div",1));},dependencies:[g],encapsulation:2})};
-export{p as ParishOfficeComponent};

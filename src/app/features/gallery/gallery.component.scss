@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use '../../../styles/_theme-colors' as mci;
+
+:host {
+  .gallery-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-block: 130px;
+
+    .image {
+      width: 100%;
+      background-color: var(--mat-sys-primary);
+      height: 300px;
+    }
+  }
+}

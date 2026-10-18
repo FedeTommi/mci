@@ -13,7 +13,7 @@
         transparent 30%,
         rgb(0 0 0 / 0.7) 100%,
     ),
-    url("https://www.augsburg.de/fileadmin/_processed_/d/8/csm_250717_Website_2025_Titelbild_v01_1661366e19.jpg");
+    var(--image-url);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

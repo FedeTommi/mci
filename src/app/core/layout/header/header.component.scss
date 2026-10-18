@@ -29,7 +29,8 @@
   a mat-icon {
     display: revert;
     // color: var(--mat-sys-on-surface);
-    color: map.get(mci.$primary-palette, 20);
+    // color: map.get(mci.$primary-palette, 20);
+    color: white;
   }
 
   .navigation {
@@ -40,9 +41,10 @@
     flex-wrap: wrap;
     justify-content: end;
 
-    button {
+    a {
       // color: var(--mat-sys-on-surface);
-      color: map.get(mci.$primary-palette, 20);
+      // color: map.get(mci.$primary-palette, 20);
+      color: white;
     }
   }
 

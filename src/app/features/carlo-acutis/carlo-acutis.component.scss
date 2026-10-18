@@ -2,5 +2,91 @@
 @use '../../../styles/_theme-colors' as mci;
 
 :host {
+  .carlos-quote-container {
+    text-align: center;
+    display: grid;
+    line-height: 0.75;
+    grid-template-columns: auto minmax(100px, 700px) auto;
+    grid-template-areas: "quote-open quote quote-close"
+                         ". author .";
+    margin: 40px auto;
+    width: fit-content;
+    position: relative;
+    align-items: center;
+  }
 
+  .quote {
+    grid-area: quote;
+  }
+
+  .quotation-marks {
+    font-size: 150px;
+    display: inline-block;
+    overflow: hidden;
+    color: var(--mat-sys-inverse-primary);
+  }
+
+  .citation-author {
+    margin-left: auto;
+    width: fit-content;
+    grid-area: author;
+  }
+
+  .image-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+
+    .image-card {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 30px;
+      height: 520px;
+    }
+  }
+
+  .video-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+  }
+
+  // TODO styles for description-image-container are duplicated
+  .description {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding-block: 40px;
+  }
+
+  .description-image-container {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+
+    .image-container {
+      align-self: center;
+      justify-self: center;
+
+      img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .description-image-container {
+      grid-template-columns: 1fr;
+    }
+
+    .description {
+      padding-block: 20px 0;
+    }
+  }
 }

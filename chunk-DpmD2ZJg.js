@@ -1,2 +1,0 @@
-import {g}from'./chunk-BeaoRnP-.js';import {o as oI,$ as $o,x as xD,b as oc}from'./main-MAJMLWOF.js';var i=class a{static \u0275fac=function(e){return new(e||a)};static \u0275cmp=oI({type:a,selectors:[["mci-contacts"]],decls:5,vars:0,consts:[["imageUrl","https://images.pexels.com/photos/7219090/pexels-photo-7219090.jpeg"],[1,"height-container"]],template:function(e,p){e&1&&($o(0,"mci-hero",0)(1,"h1"),xD(2,"Contatti"),oc()(),$o(3,"div",1),xD(4,` Contacts page
-`),oc());},dependencies:[g],encapsulation:2})};export{i as ContactsComponent};

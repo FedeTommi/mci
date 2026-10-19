@@ -1,2 +1,0 @@
-import {g}from'./chunk-BeaoRnP-.js';import {o as oI,$ as $o,x as xD,b as oc,M as Mp}from'./main-MAJMLWOF.js';var a=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=oI({type:t,selectors:[["mci-history"]],decls:4,vars:0,consts:[["imageUrl","https://images.pexels.com/photos/7219090/pexels-photo-7219090.jpeg"],[1,"height-container"]],template:function(e,c){e&1&&($o(0,"mci-hero",0)(1,"h1"),xD(2,"Storia"),oc()(),Mp(3,"div",1));},dependencies:[g],encapsulation:2})};
-export{a as HistoryComponent};

@@ -1,0 +1,2 @@
+import {g}from'./chunk-yDJG5awE.js';import {o as oI,$ as $o,x as xD,a as oc,M as Mp}from'./main-RJBS4NFA.js';var m=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=oI({type:t,selectors:[["mci-pastors"]],decls:4,vars:0,consts:[["imageUrl","https://images.unsplash.com/photo-1603796846027-0e536de14fde?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"],[1,"height-container"]],template:function(e,c){e&1&&($o(0,"mci-hero",0)(1,"h1"),xD(2,"Parroci"),oc()(),Mp(3,"div",1));},dependencies:[g],encapsulation:2})};
+export{m as PastorsComponent};

@@ -1,9 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { HeroComponent } from '../../shared/hero/hero.component';
+import { CardComponent } from '../../shared/card/card.component';
 
 @Component({
   imports:         [
-    HeroComponent
+    HeroComponent,
+    CardComponent
   ],
   selector:        'mci-contacts',
   templateUrl:     'contacts.component.html',

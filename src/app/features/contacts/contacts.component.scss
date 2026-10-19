@@ -2,5 +2,30 @@
 @use '../../../styles/_theme-colors' as mci;
 
 :host {
+  .address-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 
+  .office {
+    width: 50%;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h6 {
+      color: var(--mat-sys-secondary);
+    }
+  }
+
+  .churches-group {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+  }
 }

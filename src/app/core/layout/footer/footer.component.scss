@@ -32,7 +32,10 @@
     }
 
     .info-box {
-      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      margin: 24px 0;
+      gap: var(--sm);
     }
   }
 

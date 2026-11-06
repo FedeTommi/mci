@@ -11,8 +11,10 @@ html, body {
 }
 
 body {
-  background: var(--mat-sys-surface);
   color: var(--mat-sys-on-surface);
+  height: auto;
+  min-height: 100%;
+  background-color: var(--mat-sys-surface-container-highest);
 
   .width-container {
     display: grid;
@@ -36,4 +38,11 @@ body {
   .full-bleed {
     grid-column: full;
   }
+}
+
+// CDK preserves the scroll position and scrollbar width while the modal is open.
+.cdk-global-scrollblock {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
 }

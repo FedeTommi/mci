@@ -1,11 +1,8 @@
 :host {
-  // display: contents;
-
   .hero {
-    // width: 100vw;
     height: 840px;
     max-height: 100vh;
-    overflow: hidden; // currently for header, TODO make phone header
+    overflow: visible;
     padding: 100px 0;
     background-image: linear-gradient(
         to bottom,
@@ -28,21 +25,22 @@
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 700px), (orientation: landscape) and (max-height: 500px) {
     .hero {
       height: auto;
       min-height: 100dvh;
       max-height: none;
       overflow: visible;
-      padding-bottom: 40px;
+      padding-top: max(120px, calc(env(safe-area-inset-top, 0px) + 88px));
+      padding-bottom: clamp(24px, 6dvh, 40px);
 
       h1 {
-        font-size: clamp(2rem, 1rem + 6vw, 3.5rem);
+        font-size: clamp(2rem, 1rem + 6vmin, 3.5rem);
         overflow-wrap: anywhere;
       }
 
       h2 {
-        font-size: clamp(1.5rem, 0.75rem + 3vw, 2.5rem);
+        font-size: clamp(1.5rem, 0.75rem + 3vmin, 2.5rem);
       }
     }
   }

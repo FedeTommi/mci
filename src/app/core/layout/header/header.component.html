@@ -1,4 +1,4 @@
-<header class="width-container floating" (keydown.escape)="closeMenu(menuToggle)">
+<header class="width-container floating">
   <div #menu class="content menu" [class.compact]="isCompact()">
     <div class="logo">
       <a routerLink="/">
@@ -18,30 +18,22 @@
       class="menu-toggle"
       type="button"
       mat-icon-button
-      aria-controls="header-navigation"
+      aria-controls="compact-navigation"
+      aria-label="Apri menu"
       [attr.aria-expanded]="menuOpen()"
-      [attr.aria-label]="menuOpen() ? 'Chiudi menu' : 'Apri menu'"
-      (click)="menuOpen.set(!menuOpen())"
+      (click)="openMenu()"
     >
-      <mat-icon aria-hidden="true">{{ menuOpen() ? 'close' : 'menu' }}</mat-icon>
+      <mat-icon aria-hidden="true">menu</mat-icon>
     </button>
 
     <nav
       id="header-navigation"
       class="navigation"
       aria-label="Navigazione principale"
-      [class.open]="menuOpen()"
-      (click)="closeMenu(menuToggle)"
     >
-      <a routerLink="home" mat-button>Home</a>
-      <a routerLink="history" mat-button>Storia</a>
-      <a routerLink="pastors" mat-button>Parroci</a>
-      <a routerLink="parish-office" mat-button>Ufficio parrocchiale</a> <!-- Pfarramt-->
-      <a routerLink="gallery" mat-button>Galleria</a>
-      <a routerLink="contacts" mat-button>Contatti</a>
-      <a routerLink="liturgical-calendar" mat-button>Calendario liturgico</a>
-      <a routerLink="news" mat-button>Notizie</a>
-      <a routerLink="carlo-acutis" mat-button>Carlo Acutis</a>
+      @for (link of navigationLinks; track link.path) {
+        <a [routerLink]="link.path" mat-button>{{ link.label }}</a>
+      }
     </nav>
 
     <a class="social-link" mat-icon-button href="https://www.facebook.com/profile.php?id=61583487631617">
@@ -52,3 +44,36 @@
     </a>
   </div>
 </header>
+
+<dialog
+  #dialog
+  id="compact-navigation"
+  aria-label="Navigazione principale"
+  (cancel)="cancelMenu($event)"
+  (close)="menuClosed()"
+  (pointerdown)="startSwipe($event)"
+  (pointermove)="moveSwipe($event)"
+  (pointerup)="endSwipe($event)"
+  (pointercancel)="cancelSwipe()"
+  (click)="dialogClick($event)"
+>
+  <div class="dialog-controls">
+    <button
+      class="close-toggle"
+      type="button"
+      mat-icon-button
+      aria-label="Chiudi menu"
+      autofocus
+      (click)="closeMenu()"
+    >
+      <mat-icon aria-hidden="true">close</mat-icon>
+    </button>
+  </div>
+  <div class="navigation-panel">
+    <nav class="compact-navigation" aria-label="Navigazione principale">
+      @for (link of navigationLinks; track link.path) {
+        <a [routerLink]="link.path" mat-button>{{ link.label }}</a>
+      }
+    </nav>
+  </div>
+</dialog>

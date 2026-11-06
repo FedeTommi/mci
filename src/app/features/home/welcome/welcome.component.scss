@@ -5,6 +5,8 @@
   display: contents;
   
   section {
+    background-color: var(--mat-sys-surface);
+
     .section-content {
       max-width: 825px;
       margin: auto;

@@ -1,6 +1,60 @@
-@use 'sass:map';
-@use '../../../styles/_theme-colors' as mci;
-
 :host {
+  display: block;
 
+  h3 {
+    margin-block-start: var(--xl);
+  }
+
+  li + li {
+    margin-block-start: var(--sm);
+  }
+
+  a {
+    color: var(--mat-sys-primary);
+    overflow-wrap: anywhere;
+    text-underline-offset: 0.2em;
+  }
+
+  :is(a, .table-wrapper):focus-visible {
+    outline: 2px solid var(--mat-sys-primary);
+    outline-offset: var(--xs);
+  }
+
+  .table-wrapper {
+    max-inline-size: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    inline-size: 100%;
+    border-collapse: collapse;
+    text-align: start;
+  }
+
+  th, td {
+    padding: var(--md);
+    border-block-end: 1px solid var(--mat-sys-outline-variant);
+    white-space: nowrap;
+  }
+
+  thead {
+    background-color: var(--mat-sys-surface-container);
+  }
+
+  .contact-details {
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sm) var(--md);
+      margin-block: var(--sm);
+    }
+
+    dt {
+      font-weight: 700;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
 }

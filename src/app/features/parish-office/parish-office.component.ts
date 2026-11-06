@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIcon } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
 
 import { HeroComponent } from '../../shared/hero/hero.component';
@@ -10,6 +11,7 @@ import { SectionComponent } from '../../shared/section/section.component';
     HeroComponent,
     SectionComponent,
     MatExpansionModule,
+    MatIcon,
     RouterLink
   ],
   selector:        'mci-parish-office',

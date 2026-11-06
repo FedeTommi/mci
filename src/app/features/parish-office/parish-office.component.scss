@@ -23,6 +23,13 @@
 
   mat-panel-title {
     min-inline-size: 0;
+    gap: var(--md);
+
+    mat-icon {
+      flex: none;
+      inline-size: 40px;
+      block-size: 40px;
+    }
   }
 
   mat-expansion-panel-header {

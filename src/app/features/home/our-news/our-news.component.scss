@@ -10,30 +10,26 @@
       color: white;
     }
 
-    .image-container {
+    .news-container {
+      color: white;
       display: flex;
       flex-direction: row;
       gap: 40px;
-      align-items: center;
-      justify-content: space-between;
 
-      img {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        border-radius: 30px;
+      p {
+        flex: 1;
       }
+    }
 
-      .prayer-container {
-        max-width: 500px;
-        color: white;
-      }
+    a {
+      background-color: map.get(mci.$secondary-palette, 50);
     }
   }
 
   @media (max-width: 900px) {
-    section .image-container {
+    section .news-container {
       flex-direction: column;
+      gap: 0;
     }
   }
 }

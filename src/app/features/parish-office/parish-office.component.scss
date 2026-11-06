@@ -48,6 +48,35 @@
     }
   }
 
+  .sacrament-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    align-items: start;
+    gap: var(--xl);
+    margin-block-start: var(--md);
+
+    img {
+      display: block;
+      inline-size: 100%;
+      block-size: auto;
+      border-radius: var(--lg);
+    }
+  }
+
+  .sacrament-content + h4 {
+    margin-block-start: var(--xl);
+  }
+
+  .sacrament-text > :first-child {
+    margin-block-start: 0;
+  }
+
+  @media (max-width: 700px) {
+    .sacrament-content {
+      grid-template-columns: 1fr;
+    }
+  }
+
   mat-expansion-panel-header:focus-visible {
     outline: 2px solid var(--mat-sys-primary);
     outline-offset: -2px;

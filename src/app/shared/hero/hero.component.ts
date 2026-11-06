@@ -9,4 +9,6 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 })
 export class HeroComponent {
   imageUrl = input.required<string>();
+  title = input<string>();
+  subtitle = input<string>();
 }

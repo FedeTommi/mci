@@ -1,3 +1,6 @@
+@use 'sass:map';
+@use '../../../styles/_theme-colors' as mci;
+
 :host {
   display: block;
 
@@ -48,7 +51,7 @@
   }
 
   a {
-    color: var(--mat-sys-primary);
+    color: map.get(mci.$secondary-palette, 0);
     overflow-wrap: anywhere;
     text-underline-offset: 0.2em;
   }
@@ -79,20 +82,44 @@
     background-color: var(--mat-sys-surface-container);
   }
 
-  .contact-details {
-    div {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--sm) var(--md);
-      margin-block: var(--sm);
+  .address-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    margin-block: 32px 48px;
+
+    h3 {
+      margin: 0;
+      font-size: 1.875rem;
+      font-weight: 600;
+      line-height: 1.3;
     }
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--md);
+    font-size: 1.375rem;
+    line-height: 1.4;
 
     dt {
+      color: var(--mat-sys-secondary);
+      font-size: 0.875rem;
       font-weight: 700;
+      line-height: 1.6;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     dd {
       margin: 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .address-container {
+      grid-template-columns: 1fr;
     }
   }
 }

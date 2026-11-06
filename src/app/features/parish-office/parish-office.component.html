@@ -23,36 +23,34 @@
       tabindex="0"
       aria-labelledby="office-hours"
     >
-      <table aria-describedby="tuesday-note">
-        <thead>
-        <tr>
-          <th scope="col">Giorno</th>
-          <th scope="col">Mattina</th>
-          <th scope="col">Pomeriggio</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <th scope="row">Lunedì</th>
-          <td>8:00–12:00</td>
-          <td>13:00–17:00</td>
-        </tr>
-        <tr>
-          <th scope="row">Martedì</th>
-          <td>8:00–13:00*</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <th scope="row">Mercoledì</th>
-          <td>8:00–13:00</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <th scope="row">Giovedì</th>
-          <td>8:00–13:00</td>
-          <td>—</td>
-        </tr>
-        </tbody>
+      <table
+        mat-table
+        aria-labelledby="office-hours"
+        aria-describedby="tuesday-note"
+        [dataSource]="openingHours"
+      >
+        <ng-container matColumnDef="day">
+          <th mat-header-cell scope="col" *matHeaderCellDef>Giorno</th>
+          <th
+            mat-cell
+            scope="row"
+            role="rowheader"
+            *matCellDef="let hours"
+          >{{ hours.day }}</th>
+        </ng-container>
+
+        <ng-container matColumnDef="morning">
+          <th mat-header-cell scope="col" *matHeaderCellDef>Mattina</th>
+          <td mat-cell *matCellDef="let hours">{{ hours.morning }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="afternoon">
+          <th mat-header-cell scope="col" *matHeaderCellDef>Pomeriggio</th>
+          <td mat-cell *matCellDef="let hours">{{ hours.afternoon }}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
       </table>
     </div>
     <p id="tuesday-note"><em>*Il martedì non è previsto il ricevimento del pubblico.</em></p>

@@ -105,16 +105,16 @@
   table {
     inline-size: 100%;
     border-collapse: collapse;
-    text-align: start;
   }
 
   th, td {
+    text-align: start;
     padding: var(--md);
     border-block-end: 1px solid var(--mat-sys-outline-variant);
     white-space: nowrap;
   }
 
-  thead {
+  .mat-mdc-header-row {
     background-color: var(--mat-sys-surface-container);
   }
 

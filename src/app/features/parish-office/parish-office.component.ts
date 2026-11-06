@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { HeroComponent } from '../../shared/hero/hero.component';
 import { SectionComponent } from '../../shared/section/section.component';
@@ -6,7 +7,8 @@ import { SectionComponent } from '../../shared/section/section.component';
 @Component({
   imports:         [
     HeroComponent,
-    SectionComponent
+    SectionComponent,
+    MatExpansionModule
   ],
   selector:        'mci-parish-office',
   templateUrl:     'parish-office.component.html',

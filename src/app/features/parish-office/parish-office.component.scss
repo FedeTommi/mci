@@ -5,6 +5,44 @@
     margin-block-start: var(--xl);
   }
 
+  mat-accordion {
+    margin-top: 60px;
+    display: block;
+  }
+
+  mat-panel-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.4em;
+    letter-spacing: 0;
+    word-spacing: 0;
+  }
+
+  mat-panel-title {
+    min-inline-size: 0;
+  }
+
+  mat-expansion-panel-header {
+    height: auto;
+    min-block-size: 4rem;
+    padding-block: var(--md);
+  }
+
+  @media (max-width: 360px) {
+    mat-expansion-panel-header {
+      padding-inline: var(--sm);
+    }
+
+    mat-panel-title {
+      margin-inline-end: var(--sm);
+    }
+  }
+
+  mat-expansion-panel-header:focus-visible {
+    outline: 2px solid var(--mat-sys-primary);
+    outline-offset: -2px;
+  }
+
   li + li {
     margin-block-start: var(--sm);
   }

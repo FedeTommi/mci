@@ -27,8 +27,7 @@ body {
 
   .height-container {
     min-height: 100dvh;
-    // display: grid;
-    // grid-template-rows: minmax(0, 1fr) auto;
+    background-color: var(--mat-sys-surface);
   }
 
   .content {

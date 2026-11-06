@@ -9,6 +9,7 @@
     background-color: var(--mat-sys-surface-container-highest);
     color: var(--mat-sys-primary);
     padding-top: var(--xl);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
 
     .footer-content {
       gap: 0;

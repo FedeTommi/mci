@@ -87,6 +87,17 @@
   }
 
   @media (max-width: 700px) {
+    .carlos-quote-container {
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      grid-template-areas: "quote-open . quote-close"
+                           "quote quote quote"
+                           "author author author";
+    }
+
+    .quotation-marks {
+      font-size: 48px;
+    }
+
     .description-image-container {
       grid-template-columns: 1fr;
     }

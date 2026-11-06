@@ -3,13 +3,13 @@
 
 :host {
   .address-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px;
-  }
 
-  .office {
-    width: 50%;
+    .office, iframe {
+      width: 100%;
+    }
   }
 
   .contact-info {
@@ -19,6 +19,12 @@
 
     h6 {
       color: var(--mat-sys-secondary);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .address-container {
+      grid-template-columns: 1fr;
     }
   }
 

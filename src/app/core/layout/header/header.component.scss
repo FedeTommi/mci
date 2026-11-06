@@ -3,7 +3,9 @@
 
 :host {
   header {
-    padding-top: 2rem;
+    --header-top-padding: max(2rem, env(safe-area-inset-top, 0px));
+
+    padding-top: var(--header-top-padding);
     z-index: 10;
 
     &.floating {
@@ -86,11 +88,13 @@
       visibility: hidden;
       position: absolute;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: flex-start;
       top: calc(100% + 1rem);
       right: 0;
       left: 0;
-      max-height: calc(100dvh - 124px);
+      // The percentage is the actual height of the containing menu row.
+      max-height: calc(100dvh - var(--header-top-padding) - 100% - 1rem - max(12px, env(safe-area-inset-bottom, 0px)));
       overflow-y: auto;
       padding: 1rem 20px 1rem 1rem;
       border-radius: 12px;

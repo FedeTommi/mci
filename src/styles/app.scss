@@ -17,9 +17,9 @@ body {
   .width-container {
     display: grid;
     grid-template-columns:
-    [full-start] minmax(24px, 1fr)
+    [full-start] minmax(max(24px, env(safe-area-inset-left, 0px)), 1fr)
     [content-start] minmax(0, 1280px)
-    [content-end] minmax(24px, 1fr)
+    [content-end] minmax(max(24px, env(safe-area-inset-right, 0px)), 1fr)
     [full-end];
   }
 

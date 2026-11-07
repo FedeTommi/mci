@@ -1,6 +1,60 @@
-@use 'sass:map';
-@use '../../../styles/_theme-colors' as mci;
-
 :host {
+  h3 {
+    margin-block: 48px 24px;
+    font-size: clamp(1.625rem, 1rem + 2vw, 2.375rem);
+  }
 
+  .biography {
+    display: flow-root;
+
+    img {
+      float: inline-start;
+      width: 220px;
+      max-width: 100%;
+      height: auto;
+      margin: 8px 24px 8px 0;
+      border-radius: 30px;
+    }
+  }
+
+  .current-pastor {
+    margin-block-start: 32px;
+
+    img {
+      width: 190px;
+      border-radius: 20px;
+    }
+  }
+
+  .reflection {
+    p + p {
+      margin-block-start: 1.5em;
+    }
+
+    footer {
+      margin-block-start: 48px;
+    }
+  }
+
+  .source-note {
+    font-size: 1rem;
+
+    a {
+      color: inherit;
+      text-underline-offset: 3px;
+
+      &:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 4px;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .biography img {
+      float: none;
+      display: block;
+      margin-bottom: 24px;
+    }
+  }
 }

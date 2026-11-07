@@ -31,12 +31,13 @@
       >
         <ng-container matColumnDef="day">
           <th mat-header-cell scope="col" *matHeaderCellDef>Giorno</th>
-          <th
+          <td
             mat-cell
-            scope="row"
             role="rowheader"
             *matCellDef="let hours"
-          >{{ hours.day }}</th>
+          >
+            <b>{{ hours.day }}</b>
+          </td>
         </ng-container>
 
         <ng-container matColumnDef="morning">
@@ -125,7 +126,8 @@
             <ul>
               <li>Certificato di Battesimo.</li>
               <li>Frequenza del percorso di catechesi.</li>
-              <li>Eventuale nulla osta, qualora richiesto dalla parrocchia presso la quale verrà celebrato il sacramento.
+              <li>Eventuale nulla osta, qualora richiesto dalla parrocchia presso la quale verrà celebrato il
+                sacramento.
               </li>
             </ul>
             <p>Per conoscere le modalità di iscrizione e il calendario degli incontri, si prega di contattare la

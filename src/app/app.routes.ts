@@ -10,8 +10,19 @@ export const routes: Routes = [
         loadComponent: () => import('./features/home/home.component').then((m) => m.HomeComponent),
       },
       {
-        path:          'history',
-        loadComponent: () => import('./features/history/history.component').then((m) => m.HistoryComponent),
+        path: 'history',
+        children: [
+          { path: '', pathMatch: 'full', redirectTo: 'mission' },
+          {
+            path: 'mission',
+            loadComponent: () => import('./features/history/history.component').then((m) => m.HistoryComponent),
+          },
+          {
+            path: 'diocese',
+            loadComponent: () => import('./features/history/history.component').then((m) => m.HistoryComponent),
+            data: { isDiocese: true },
+          },
+        ],
       },
       {
         path:          'pastors',

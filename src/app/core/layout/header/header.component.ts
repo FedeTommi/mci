@@ -33,7 +33,7 @@ export class HeaderComponent {
 
   protected readonly navigationLinks = [
     { path: 'home', label: 'Home' },
-    { path: 'history', label: 'Storia' },
+    { path: 'history/mission', label: 'Storia' },
     { path: 'pastors', label: 'Parroci' },
     { path: 'parish-office', label: 'Ufficio parrocchiale' },
     { path: 'gallery', label: 'Galleria' },

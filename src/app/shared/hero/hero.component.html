@@ -6,5 +6,19 @@
     @if (subtitle()) {
       <h2>{{ subtitle() }}</h2>
     }
+    @if (links().length) {
+      <nav class="topic-navigation" [attr.aria-label]="title() ?? 'Argomenti'">
+        @for (link of links(); track link.path) {
+          <a
+            routerLinkActive="current"
+            ariaCurrentWhenActive="page"
+            [routerLink]="link.path"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <h6>{{ link.label }}</h6>
+          </a>
+        }
+      </nav>
+    }
   </div>
 </div>

@@ -32,15 +32,15 @@ export class HeaderComponent {
   private readonly destroyRef = inject(DestroyRef);
 
   protected readonly navigationLinks = [
-    { path: 'home', label: 'Home' },
-    { path: 'history/mission', label: 'Storia' },
-    { path: 'pastors', label: 'Parroci' },
-    { path: 'parish-office', label: 'Ufficio parrocchiale' },
-    { path: 'gallery', label: 'Galleria' },
-    { path: 'contacts', label: 'Contatti' },
-    { path: 'liturgical-calendar', label: 'Calendario liturgico' },
-    { path: 'news', label: 'Notizie' },
-    { path: 'carlo-acutis', label: 'Carlo Acutis' },
+    { path: '/home', label: 'Home' },
+    { path: '/history/mission', label: 'Storia' },
+    { path: '/pastors', label: 'Parroci' },
+    { path: '/parish-office', label: 'Ufficio parrocchiale' },
+    { path: '/gallery', label: 'Galleria' },
+    { path: '/contacts', label: 'Contatti' },
+    { path: '/liturgical-calendar', label: 'Calendario liturgico' },
+    { path: '/news', label: 'Notizie' },
+    { path: '/carlo-acutis', label: 'Carlo Acutis' },
   ];
 
   protected readonly menuOpen = signal(false);

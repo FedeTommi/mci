@@ -21,7 +21,7 @@ export class HistoryComponent {
 
   protected readonly isDiocese = computed(() => this.routeData()['isDiocese'] === true);
   protected readonly links = [
-    { label: 'La Missione', path: '/home/history/mission' },
-    { label: 'La diocesi', path: '/home/history/diocese' }
+    { label: 'La Missione', path: '/history/mission' },
+    { label: 'La diocesi', path: '/history/diocese' }
   ];
 }

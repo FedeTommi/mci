@@ -1,12 +1,28 @@
-import { Routes } from '@angular/router';
+import { inject } from '@angular/core';
+import { RedirectFunction, Router, Routes } from '@angular/router';
+
+function redirectLegacyPage(path: string): RedirectFunction {
+  return ({ queryParams, fragment }) => inject(Router).createUrlTree([path], { queryParams, fragment: fragment ?? undefined });
+}
 
 export const routes: Routes = [
+  { path: 'home/history', pathMatch: 'full', redirectTo: redirectLegacyPage('/history/mission') },
+  { path: 'home/history/mission', pathMatch: 'full', redirectTo: redirectLegacyPage('/history/mission') },
+  { path: 'home/history/diocese', pathMatch: 'full', redirectTo: redirectLegacyPage('/history/diocese') },
+  { path: 'home/pastors', pathMatch: 'full', redirectTo: redirectLegacyPage('/pastors') },
+  { path: 'home/parish-office', pathMatch: 'full', redirectTo: redirectLegacyPage('/parish-office') },
+  { path: 'home/gallery', pathMatch: 'full', redirectTo: redirectLegacyPage('/gallery') },
+  { path: 'home/contacts', pathMatch: 'full', redirectTo: redirectLegacyPage('/contacts') },
+  { path: 'home/liturgical-calendar', pathMatch: 'full', redirectTo: redirectLegacyPage('/liturgical-calendar') },
+  { path: 'home/news', pathMatch: 'full', redirectTo: redirectLegacyPage('/news') },
+  { path: 'home/carlo-acutis', pathMatch: 'full', redirectTo: redirectLegacyPage('/carlo-acutis') },
   {
-    path:          'home',
+    path:          '',
     loadComponent: () => import('./core/layout/app/app.component').then((m) => m.AppComponent),
     children:      [
+      { path: '', pathMatch: 'full', redirectTo: '/home' },
       {
-        path:          '',
+        path:          'home',
         loadComponent: () => import('./features/home/home.component').then((m) => m.HomeComponent),
       },
       {

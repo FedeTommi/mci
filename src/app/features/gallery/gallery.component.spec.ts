@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
+
 import { GalleryComponent } from './gallery.component';
-import { GALLERY_GROUPS, GalleryGroup } from './gallery.model';
+import { galleryGroups, GalleryGroup } from './gallery.model';
 
 const photo = (id: string, caption?: string) => ({ id, src: `images/gallery/${id}.jpg`, thumbnail: `images/gallery/_thumbnails/${id}.webp`, width: 900, height: 600, alt: `Descrizione ${id}`, caption });
 const collection: GalleryGroup[] = [
@@ -10,7 +11,7 @@ const collection: GalleryGroup[] = [
 ];
 
 async function page(groups = collection) {
-  TestBed.configureTestingModule({ imports: [GalleryComponent], providers: [{ provide: GALLERY_GROUPS, useValue: groups }] });
+  TestBed.configureTestingModule({ imports: [GalleryComponent], providers: [{ provide: galleryGroups, useValue: groups }] });
   const fixture = TestBed.createComponent(GalleryComponent);
   await fixture.whenStable();
   const root: HTMLElement = fixture.nativeElement;

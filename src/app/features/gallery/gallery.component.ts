@@ -4,7 +4,7 @@ import { MatIcon } from '@angular/material/icon';
 import { ScrollStrategyOptions } from '@angular/cdk/overlay';
 
 import { HeroComponent } from '../../shared/hero/hero.component';
-import { GALLERY_GROUPS, GalleryGroup, GalleryPhoto } from './gallery.model';
+import { galleryGroups, GalleryGroup, GalleryPhoto } from './gallery.model';
 
 @Component({
   imports: [HeroComponent, MatIcon],
@@ -15,16 +15,17 @@ import { GALLERY_GROUPS, GalleryGroup, GalleryPhoto } from './gallery.model';
 })
 export class GalleryComponent {
   private readonly loadMore = viewChild<ElementRef<HTMLButtonElement>>('loadMore');
+  private readonly dialog = viewChild.required<ElementRef<HTMLDialogElement>>('viewer');
+
   private swipe?: { id: number; x: number; y: number };
   protected readonly imageState = signal<'loading' | 'ready' | 'error'>('loading');
   protected readonly failedThumbnails = signal(new Set<string>());
-  private readonly dialog = viewChild.required<ElementRef<HTMLDialogElement>>('viewer');
   private readonly host = inject<ElementRef<HTMLElement>>(ElementRef);
   private readonly injector = inject(Injector);
   private readonly scrollLock = inject(ScrollStrategyOptions).block();
   protected readonly selectedPhoto = signal<GalleryPhoto | undefined>(undefined);
 
-  protected readonly groups = inject(GALLERY_GROUPS).filter((group) => group.photos.length);
+  protected readonly groups = inject(galleryGroups).filter((group) => group.photos.length);
   protected readonly activeGroup = signal(this.groups[0]);
   protected readonly visibleCount = signal(12);
   protected readonly visiblePhotos = computed(() => this.activeGroup()?.photos.slice(0, this.visibleCount()) ?? []);

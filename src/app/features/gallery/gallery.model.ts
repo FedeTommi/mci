@@ -18,4 +18,4 @@ export interface GalleryGroup {
   photos: GalleryPhoto[];
 }
 
-export const GALLERY_GROUPS = new InjectionToken<GalleryGroup[]>('Gallery groups', { providedIn: 'root', factory: () => galleryData });
+export const galleryGroups = new InjectionToken<GalleryGroup[]>('Gallery groups', { providedIn: 'root', factory: () => galleryData });

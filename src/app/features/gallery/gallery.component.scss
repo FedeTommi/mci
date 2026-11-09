@@ -8,7 +8,7 @@
 
 .gallery-content {
   min-width: 0;
-  padding-block: 32px 80px;
+  padding-block: var(--xl) 80px;
 }
 
 button {
@@ -30,14 +30,14 @@ button:focus-visible {
   display: flex;
   gap: 12px;
   overflow-x: auto;
-  padding: 16px 4px;
+  padding: var(--md) var(--xs);
   background: var(--mat-sys-surface);
   scrollbar-width: thin;
 
   button {
     flex-shrink: 0;
     min-height: 48px;
-    padding: 12px 24px;
+    padding: 12px var(--lg);
     border-radius: 30px;
     background: var(--mat-sys-surface-container-high);
 
@@ -49,13 +49,13 @@ button:focus-visible {
 }
 
 h2 {
-  margin-block: 32px 24px;
+  margin-block: var(--xl) var(--lg);
   scroll-margin-top: 100px;
 }
 
 .gallery-grid {
   display: grid;
-  gap: 24px;
+  gap: var(--lg);
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
 
   button {
@@ -79,15 +79,15 @@ h2 {
     display: grid;
     place-content: center;
     height: 100%;
-    padding: 24px;
+    padding: var(--lg);
   }
 }
 
 .load-more {
   display: block;
   min-height: 48px;
-  margin: 32px auto 0;
-  padding: 12px 24px;
+  margin: var(--xl) auto 0;
+  padding: 12px var(--lg);
   border-radius: 30px;
   background: var(--mat-sys-primary);
   color: var(--mat-sys-on-primary);
@@ -102,7 +102,7 @@ dialog {
   max-width: none;
   max-height: none;
   border: 0;
-  padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  padding: max(var(--md), env(safe-area-inset-top)) max(var(--md), env(safe-area-inset-right)) max(var(--md), env(safe-area-inset-bottom)) max(var(--md), env(safe-area-inset-left));
   background: var(--mat-sys-surface);
   color: var(--mat-sys-on-surface);
   overscroll-behavior: contain;
@@ -150,7 +150,7 @@ dialog {
     justify-content: center;
     width: 100%;
     min-width: 0;
-    margin: 16px 0 0;
+    margin: var(--md) 0 0;
   }
 
   img {
@@ -162,7 +162,7 @@ dialog {
 
   figcaption {
     flex-shrink: 0;
-    padding-top: 16px;
+    padding-top: var(--md);
     text-align: center;
   }
 
@@ -170,14 +170,14 @@ dialog {
     position: absolute;
     inset: 40% 0 auto;
     text-align: center;
-    padding: 16px;
+    padding: var(--md);
     background: var(--mat-sys-surface);
   }
 }
 
 .viewer-position {
   flex-shrink: 0;
-  margin: 16px 0 0;
+  margin: var(--md) 0 0;
   text-align: center;
   font-size: 0.875rem;
 }

@@ -42,3 +42,7 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Reproducible gallery build output
+/public/images/gallery/_thumbnails/
+/src/app/features/gallery/gallery-data.json

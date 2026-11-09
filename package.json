@@ -7,7 +7,13 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:mci": "node dist/mci/server/server.mjs"
+    "serve:ssr:mci": "node dist/mci/server/server.mjs",
+    "gallery:prepare": "node scripts/prepare-gallery.mjs",
+    "prestart": "npm run gallery:prepare",
+    "prebuild": "npm run gallery:prepare",
+    "prewatch": "npm run gallery:prepare",
+    "pretest": "npm run gallery:prepare",
+    "test:gallery-assets": "node --test scripts/prepare-gallery.test.mjs"
   },
   "private": true,
   "packageManager": "npm@11.12.1",
@@ -33,6 +39,7 @@
     "@types/node": "20.19.43",
     "angular-cli-ghpages": "3.1.1",
     "jsdom": "28.1.0",
+    "sharp": "0.35.5",
     "typescript": "6.0.3",
     "vitest": "4.1.12"
   },
@@ -42,4 +49,3 @@
     }
   }
 }
-

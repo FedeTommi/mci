@@ -3,21 +3,99 @@
   title="Galleria"
 />
 <div class="height-container width-container">
-  <div class="gallery-grid content">
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
-    <div class="image"></div>
+  <div class="content gallery-content">
+    <nav class="group-controls" aria-label="Gruppi di fotografie">
+      @for (group of groups; track group.id) {
+        <button
+          type="button"
+          [attr.data-group]="group.id"
+          [attr.aria-pressed]="activeGroup() === group"
+          (click)="selectGroup(group)"
+        >{{ group.label }}</button>
+      }
+    </nav>
+    @if (activeGroup(); as group) {
+      <h2>{{ group.label }}</h2>
+      <div class="gallery-grid">
+        @for (photo of visiblePhotos(); track photo.id) {
+          <button
+            type="button"
+            [attr.data-photo]="photo.id"
+            [attr.aria-label]="'Apri: ' + photo.alt"
+            (click)="openPhoto(photo)"
+          >
+            @if (failedThumbnails().has(photo.id)) {
+              <span class="thumbnail-error">Anteprima non disponibile. Apri fotografia.</span>
+            }
+            <img
+              loading="lazy"
+              decoding="async"
+              width="640"
+              height="480"
+              [src]="photo.thumbnail"
+              [alt]="photo.alt"
+              [hidden]="failedThumbnails().has(photo.id)"
+              (error)="thumbnailFailed(photo.id)"
+            >
+          </button>
+        }
+      </div>
+      @if (visibleCount() < group.photos.length) {
+        <button #loadMore class="load-more" type="button" (click)="showMore()">Mostra altre fotografie</button>
+      }
+    } @else {
+      <p>Non ci sono ancora fotografie. Torna a trovarci presto.</p>
+    }
   </div>
 </div>
+
+<dialog
+  #viewer
+  aria-label="Visualizzatore fotografie"
+  (keydown)="viewerKey($event)"
+  (close)="viewerClosed()"
+>
+  <div class="viewer-controls">
+    <button type="button" aria-label="Foto precedente" (click)="movePhoto(-1)">
+      <mat-icon aria-hidden="true">chevron_left</mat-icon>
+    </button>
+    <button type="button" aria-label="Foto successiva" (click)="movePhoto(1)">
+      <mat-icon aria-hidden="true">chevron_right</mat-icon>
+    </button>
+    <button type="button" aria-label="Chiudi fotografia" autofocus (click)="closeViewer()">
+      <mat-icon aria-hidden="true">close</mat-icon>
+    </button>
+  </div>
+  <div
+    class="viewer-stage"
+    (pointerdown)="startSwipe($event)"
+    (pointerup)="endSwipe($event)"
+    (pointercancel)="cancelSwipe()"
+  >
+    @for (photo of selectedPhoto() ? [selectedPhoto()!] : []; track photo.id) {
+      <figure [attr.aria-busy]="imageState() === 'loading'">
+        @if (imageState() === 'loading') {
+          <p class="image-status">Caricamento fotografia…</p>
+        }
+        @if (imageState() === 'error') {
+          <p class="image-status" role="status">Fotografia non disponibile. Puoi passare alla precedente o alla successiva.</p>
+        }
+        <img
+          decoding="async"
+          draggable="false"
+          [src]="photo.src"
+          [alt]="photo.alt"
+          [width]="photo.width"
+          [height]="photo.height"
+          [hidden]="imageState() === 'error'"
+          (load)="imageSettled(photo, 'ready')"
+          (error)="imageSettled(photo, 'error')"
+        >
+        @if (photo.caption) {
+          <figcaption>{{ photo.caption }}</figcaption>
+        }
+      </figure>
+    }
+  </div>
+  <p class="viewer-position" aria-live="polite">{{ viewerPosition() }}</p>
+</dialog>

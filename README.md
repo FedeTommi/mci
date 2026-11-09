@@ -7,10 +7,12 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 To start a local development server, run:
 
 ```bash
-ng serve
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Use Node.js 24 and install dependencies with `npm install`. Once the server is running, open your browser and navigate to `http://localhost:4200/mci/`. The application will automatically reload whenever you modify any of the source files.
+
+The npm start, build, watch and test commands prepare the gallery data and thumbnail assets first. After adding or changing photos/metadata during a running development session, run `npm run gallery:prepare` (or restart `npm start`). See [Gallery publishing and checks](docs/gallery.md).
 
 ## Code scaffolding
 
@@ -31,7 +33,7 @@ ng generate --help
 To build the project run:
 
 ```bash
-ng build
+npm run build
 ```
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
@@ -41,7 +43,7 @@ This will compile your project and store the build artifacts in the `dist/` dire
 To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
 ```bash
-ng test
+npm test -- --watch=false
 ```
 
 ## Running end-to-end tests

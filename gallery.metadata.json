@@ -1,0 +1,59 @@
+{
+  "groups": {
+    "worship": {
+      "label": "Vita di fede",
+      "order": 0
+    },
+    "community": {
+      "label": "Insieme a tavola",
+      "order": 1
+    }
+  },
+  "photos": {
+    "worship/flower-and-bread-display.jpeg": {
+      "alt": "Cesti di pane e fiori davanti all’altare.",
+      "caption": "Cesti di pane e fiori davanti all’altare.",
+      "order": 0
+    },
+    "worship/decorated-cross-and-bread.jpeg": {
+      "alt": "Croce e cesti di pane in una cornice decorata.",
+      "caption": "Croce e cesti di pane in una cornice decorata.",
+      "order": 1
+    },
+    "worship/priest-at-altar.jpeg": {
+      "alt": "Un sacerdote in verde davanti all’altare.",
+      "caption": "Un sacerdote in verde davanti all’altare.",
+      "order": 2
+    },
+    "community/food-on-grill.jpeg": {
+      "alt": "Carne e salsicce sulla griglia.",
+      "caption": "Carne e salsicce sulla griglia.",
+      "order": 3
+    },
+    "worship/priest-beside-flowers.jpeg": {
+      "alt": "Un sacerdote accanto a fiori e cesti di pane.",
+      "caption": "Un sacerdote accanto a fiori e cesti di pane.",
+      "order": 4
+    },
+    "community/cooking-at-grill.jpeg": {
+      "alt": "Due persone cucinano alla griglia.",
+      "caption": "Due persone cucinano alla griglia.",
+      "order": 5
+    },
+    "community/people-preparing-food.jpeg": {
+      "alt": "Persone al lavoro attorno a lunghi tavoli.",
+      "caption": "Persone al lavoro attorno a lunghi tavoli.",
+      "order": 6
+    },
+    "community/group-with-baking-trays.jpeg": {
+      "alt": "Un gruppo accanto a un carrello di teglie.",
+      "caption": "Un gruppo accanto a un carrello di teglie.",
+      "order": 7
+    },
+    "community/shaping-dough.jpeg": {
+      "alt": "Due donne preparano piccoli pezzi di impasto.",
+      "caption": "Due donne preparano piccoli pezzi di impasto.",
+      "order": 8
+    }
+  }
+}
